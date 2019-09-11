@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Юлия](https://up.htmlacademy.ru/htmlcss/26/user/1172889).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
