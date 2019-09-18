@@ -74,8 +74,26 @@
     <h1>Перфораторы</h1>
 
     <section>
-      <!--Позже будут добавлены формы из 4 лекции-->
-      <button>Показать</button>
+      <form method="get" action="https://">
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul class="filter-brand">
+          <li><label><input type="checkbox" name="BOSCH" checked>Bosch</label></li>
+          <li><label><input type="checkbox" name="INTERSKOL">Интерскол</label></li>
+          <li><labe><input type="checkbox" name="MAKITA" checked>Makita</labe></li>
+          <li><label><input type="checkbox" name="DEWALT">Dewalt</label></li>
+          <li><label><input type="checkbox" name="HITACHI">Hitachi</label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <ul class="filter-charging">
+          <li><label><input type="radio" name="filter-charging" value="Accumulator" checked>Аккууляторные</label></li>
+          <li><label><input type="radio" name="filter-charging" value="Socket">Сетевые</label></li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+      </form>
     </section>
 
     <table class="product-list">
