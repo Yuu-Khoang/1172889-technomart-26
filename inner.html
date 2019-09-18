@@ -88,7 +88,7 @@
       <fieldset>
         <legend>Питание:</legend>
         <ul class="filter-charging">
-          <li><label><input type="radio" name="filter-charging" value="Accumulator" checked>Аккууляторные</label></li>
+          <li><label><input type="radio" name="filter-charging" value="Accumulator" checked>Аккумуляторные</label></li>
           <li><label><input type="radio" name="filter-charging" value="Socket">Сетевые</label></li>
         </ul>
       </fieldset>
@@ -115,7 +115,7 @@
           <td class="product-price-special">22500 Р.</td>
           <td class="product-price">15500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -126,7 +126,7 @@
           <td class="product-price-special">30500 Р.</td>
           <td class="product-price">25500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -137,7 +137,7 @@
           <td class="product-price-special"></td>
           <td class="product-price">12500 Р.</td>
           <td class="product-availability">
-          <a href="buy.html">Купить</a>
+          <a href="#buy-popup">Купить</a>
           <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -148,7 +148,7 @@
           <td class="product-price-special">22500 Р.</td>
           <td class="product-price">15500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -159,7 +159,7 @@
           <td class="product-price-special">30500 Р.</td>
           <td class="product-price">25500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -170,7 +170,7 @@
           <td class="product-price-special"></td>
           <td class="product-price">12500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -181,7 +181,7 @@
           <td class="product-price-special">22500 Р.</td>
           <td class="product-price">15500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -192,7 +192,7 @@
           <td class="product-price-special">30500 Р.</td>
           <td class="product-price">25500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
@@ -203,12 +203,22 @@
           <td class="product-price-special"></td>
           <td class="product-price">12500 Р.</td>
           <td class="product-availability">
-              <a href="buy.html">Купить</a>
+              <a href="#buy-popup">Купить</a>
               <a href="bookmarks.html">В закладки</a>
           </td>
         </tr>
       </tbody>
     </table>
+
+    <div class="buy-popup" id="buy-popup">
+      <button class="close-popup" type="button" aria-label="Закрыть"></button>
+      <p>Товар добавлен в корзину!</p>
+      <div class="buy-popup-button">
+        <button type="submit">Оформить заказ</button>
+        <button class="close-popup" type="button" aria-label="Вернуться в каталог">Продолжить покупки</button>
+      </div>
+    </div>
+
 
   </main>
 

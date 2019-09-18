@@ -72,7 +72,19 @@
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.jpg" alt="Местоположение компании Техномарт на карте">
-        <span><a href="contacts.html">Заблудились? Напишите Нам!</a></span>
+        <span><a href="#contacts-popup">Заблудились? Напишите Нам!</a></span>
+        <div class="contacts-popup" id="contacts-popup">
+          <button class="close-popup" type="button" aria-label="Закрыть"></button>
+          <form method="get" action="https://">
+            <p><label>Ваше имя:
+            <input type="text" name="Name" placeholder="Имя Фамилия"></label></p>
+            <p><label>Ваш e-mail:
+                <input type="email" name="Email" placeholder="email@example.com"></label></p>
+            <p><label>Текст письма:
+                <textarea name="Message" rows="5">В свободной форме</textarea></label></p>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
 
   </main>
@@ -109,7 +121,7 @@
       <p>&#169; 2010-2017 Компания &laquo;Техномарт&raquo;
         Все права защищены</p>
     </div>
-    <div>
+    <div class="socials">
       <ul>
         <li><a href="https://vk.com/"><span class="visually-hidden">ВКонтакте Техномарт</span></a></li>
         <li><a href="https://facebook.com/‎"><span class="visually-hidden">Фейсбук Техномарт</span></a></li>
