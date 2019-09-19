@@ -74,22 +74,22 @@
     <h1>Перфораторы</h1>
 
     <section>
-      <form method="get" action="https://">
+      <form method="get" action="https://echo.htmlacademy.ru/">
       <fieldset>
         <legend>Производители:</legend>
         <ul class="filter-brand">
-          <li><label><input type="checkbox" name="BOSCH" checked>Bosch</label></li>
-          <li><label><input type="checkbox" name="INTERSKOL">Интерскол</label></li>
-          <li><labe><input type="checkbox" name="MAKITA" checked>Makita</labe></li>
-          <li><label><input type="checkbox" name="DEWALT">Dewalt</label></li>
-          <li><label><input type="checkbox" name="HITACHI">Hitachi</label></li>
+          <li><label><input type="checkbox" name="brand" value="BOSCH" checked>Bosch</label></li>
+          <li><label><input type="checkbox" name="brand" value="INTERSKOL">Интерскол</label></li>
+          <li><label><input type="checkbox" name="brand" value="MAKITA" checked>Makita</label></li>
+          <li><label><input type="checkbox" name="brand" value="DEWALT">Dewalt</label></li>
+          <li><label><input type="checkbox" name="brand" value="HITACHI">Hitachi</label></li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>Питание:</legend>
         <ul class="filter-charging">
-          <li><label><input type="radio" name="filter-charging" value="Accumulator" checked>Аккумуляторные</label></li>
-          <li><label><input type="radio" name="filter-charging" value="Socket">Сетевые</label></li>
+          <li><label><input type="radio" name="charging" value="Accumulator" checked>Аккумуляторные</label></li>
+          <li><label><input type="radio" name="charging" value="Socket">Сетевые</label></li>
         </ul>
       </fieldset>
       <button type="submit">Показать</button>
@@ -214,7 +214,7 @@
       <button class="close-popup" type="button" aria-label="Закрыть"></button>
       <p>Товар добавлен в корзину!</p>
       <div class="buy-popup-button">
-        <button type="submit">Оформить заказ</button>
+        <a href="buy.html">Оформить заказ</a>
         <button class="close-popup" type="button" aria-label="Вернуться в каталог">Продолжить покупки</button>
       </div>
     </div>
