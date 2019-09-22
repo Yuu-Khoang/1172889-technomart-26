@@ -4,23 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт - инструменты, техника, материалы</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a>
-
-      <img src="img/logo-technomart.svg" alt="Компания Техномарт">
-
+<div class="logo">
+    <a href="#nowhere">
+      <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
     </a>
-    <nav>
-        <a href="search.html">Поиск</a>
-        <a href="bookmarks.html">Закладки:</a>
-        <a href="cart.html">Корзина</a>
-        <a href="buy.html">Оформить заказ</a>
+</div>
+    <nav class="top-header">
+        <a href="search.html" id="search">Поиск</a>
+        <a href="bookmarks.html" id="bookmarks">Закладки:</a>
+        <a href="cart.html" id="cart">Корзина</a>
+        <div><a href="buy.html">Оформить заказ</a></div>
     </nav>
 
-    <div>
+    <div class="page-header">
       <p>
         Интернет-магазин
         строительных материалов
@@ -33,13 +35,13 @@
     </div>
 
       <div>
-        <button type="submit">Войти</button>
-        <button type="button">Регистрация</button>
+        <label><input type="submit" value="Войти"></label>
+        <label><input type="submit" value="Регистрация"></label>
       </div>
 
 
 
-    <nav>
+    <nav class="page-nav">
       <ul>
         <li><a>Главная</a></li>
         <li><a href="company.html">Компания</a></li>
@@ -47,7 +49,7 @@
         <li><a href="news.html">Новости</a></li>
         <li><a href="sale.html">Спецпредложения</a></li>
         <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="сontacs.html">Контакты</a></li>
+        <li><a href="сontacts.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -55,7 +57,7 @@
   <main>
 
 <h1>Компания Техномарт: материалы, инструменты и техника для строительства и ремонта</h1>
-      <section>
+      <section class="description">
         <h3>Компания &laquo;Техномарт&raquo;</h3>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
           оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -72,14 +74,14 @@
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.jpg" alt="Местоположение компании Техномарт на карте">
-        <span><a href="#contacts-popup">Заблудились? Напишите Нам!</a></span>
+        <button class="contacts-popup">Заблудились? Напишите Нам!</button>
         <div class="contacts-popup" id="contacts-popup">
           <button class="close-popup" type="button" aria-label="Закрыть"></button>
           <form method="get" action="https://echo.htmlacademy.ru/">
             <p><label>Ваше имя:
-            <input type="text" name="Name" placeholder="Имя Фамилия"></label></p>
+            <input type="text" name="Name" placeholder="Имя Фамилия" required></label></p>
             <p><label>Ваш e-mail:
-                <input type="email" name="Email" placeholder="email@example.com"></label></p>
+                <input type="email" name="Email" placeholder="email@example.com" required></label></p>
             <p><label>Текст письма:
                 <textarea name="Message" rows="5">В свободной форме</textarea></label></p>
             <button type="submit">Отправить</button>
@@ -90,9 +92,13 @@
   </main>
 
   <footer>
-      <section class="bottom-footer">
+      <section class="page-footer">
     <div>
-        <img src="img/logo-technomart.svg" alt="Компания Техномарт">
+        <div class="logo">
+            <a href="#nowhere">
+              <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
+            </a>
+        </div>
       <nav class="nav-site">
         <ul>
           <li><a href="company.html">Компания</a></li>
@@ -103,7 +109,7 @@
         </ul>
       </nav>
     </div>
-    <div>
+    <div class="footer-contacts">
       <address>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
     </div>
@@ -117,7 +123,7 @@
     </nav>
   </section>
 
-  <section class="main-footer">
+  <section class="bottom-footer">
     <div>
       <p>&#169; 2010-2017 Компания &laquo;Техномарт&raquo;
         Все права защищены</p>

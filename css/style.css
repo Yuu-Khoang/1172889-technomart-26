@@ -1,0 +1,159 @@
+body {
+font-family: 'Cuprum', 'PT Sans', sans-serif;
+background-color: #f4f8fa;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
+}
+
+a, address {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+}
+
+section {
+  background-color: #ffffff;
+}
+
+button {
+  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-size: 14pt;
+  color: #ffffff;
+  background-color: #ee3643;
+  height: 38px;
+  min-width: 197px;
+  border: 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.description h3 {
+  font-size: 30px;
+}
+
+.description p {
+  font-size: 13pt;
+}
+
+.description li {
+  font-size: 18pt;
+}
+
+.close-popup {
+  background: url(../img/icon-close.svg) no-repeat;
+}
+
+/* Логотип компании */
+.logo {
+  background-color: #ee3643;
+  width: 220px;
+  height: 42px;
+  border-bottom: 5px #b52933 solid;
+}
+
+.logo img {
+  padding: 13px 55px;
+}
+
+/* Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ */
+.top-header {
+  font-size: 18pt;
+  background-color: #293449;
+  font-size: 17pt;
+  line-height: 18pt;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+.top-header #search {
+  background: url(../img/icon-search.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.top-header #bookmarks {
+  background: url(../img/icon-bookmarks.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.top-header #cart {
+  background: url(../img/icon-cart.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.top-header div {
+  background: #63a63e;
+  width: 220px;
+  height: 42px;
+}
+
+/* Шапка страницы: Описание магазина, контакты, Личный кабинет */
+div.page-header > first-child {
+  color: #ee3643;
+  font-style: italic;
+  font-size: 16pt;
+}
+
+/* Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
+.page-nav {
+  background-color: #32425c;
+  font-size: 17pt;
+}
+
+.page-nav li {
+  list-style-type: none;
+}
+
+/* Блок Контакты и карта */
+
+
+/* Подвал страницы: Навигация, Адрес, Категория товара */
+.page-footer {
+  background-color: #32425c;
+  font-size: 18pt;
+}
+
+.nav-site li {
+color: #ffffff;
+list-style-type: none;
+}
+
+.footer-contacts {
+  font-style: normal;
+  text-decoration: none;
+   color: #ffffff;
+}
+
+.nav-category a {
+  color: #ffd180;
+}
+
+.nav-category li {
+  list-style-type: none;
+}
+
+/* Нижний подвал: Копирайт, Соцсети, Обратная связь*/
+.bottom-footer {
+  font-size: 16pt;
+    background-color: #293449;
+    min-height: 53px;
+    color: #ffffff;
+}
+
+.bottom-footer li {
+  list-style-type: none;
+}
+
+.bottom-footer a {
+  color: #ffd180;
+}
