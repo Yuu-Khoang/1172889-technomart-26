@@ -19,7 +19,7 @@ section {
 
 button {
   font-family: 'Cuprum', 'PT Sans', sans-serif;
-  font-size: 14pt;
+  font-size: 14px;
   color: #ffffff;
   background-color: #ee3643;
   height: 38px;
@@ -30,16 +30,31 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
 .description h3 {
   font-size: 30px;
 }
 
 .description p {
-  font-size: 13pt;
+  font-size: 13px;
 }
 
 .description li {
-  font-size: 18pt;
+  font-size: 18px;
 }
 
 .close-popup {
@@ -60,54 +75,62 @@ button {
 
 /* Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ */
 .top-header {
-  font-size: 18pt;
+  font-size: 18px;
   background-color: #293449;
-  font-size: 17pt;
-  line-height: 18pt;
+  font-size: 17px;
+  line-height: 18px;
   padding-top: 18px;
   padding-bottom: 16px;
 }
-.top-header #search {
+.top-header .icon-search::before {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
   background: url(../img/icon-search.svg) no-repeat;
-  width: 17px;
-  height: 17px;
-  padding-top: 12px;
-  padding-right: 12px;
+  opacity: 0.3;
+  content: "";
 }
 
-.top-header #bookmarks {
+.top-header .icon-bookmarks::before {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
   background: url(../img/icon-bookmarks.svg) no-repeat;
-  width: 17px;
-  height: 17px;
-  padding-top: 12px;
-  padding-right: 12px;
+  opacity: 0.3;
+  content: "";
 }
 
-.top-header #cart {
+.top-header .icon-cart::before {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
   background: url(../img/icon-cart.svg) no-repeat;
-  width: 17px;
-  height: 17px;
-  padding-top: 12px;
-  padding-right: 12px;
+  opacity: 0.3;
+  content: "";
 }
 
-.top-header div {
-  background: #63a63e;
+.order {
   width: 220px;
-  height: 42px;
+  min-height: 42px;
+  text-align: center;
+  background: #63a63e;
+}
+
+.order a {
+  vertical-align: middle;
 }
 
 /* Шапка страницы: Описание магазина, контакты, Личный кабинет */
-div.page-header > first-child {
-  color: #ee3643;
+.slogan {
   font-style: italic;
-  font-size: 16pt;
+  font-size: 16px;
+  color: #ee3643;
 }
 
 /* Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
 .page-nav {
   background-color: #32425c;
-  font-size: 17pt;
+  font-size: 17px;
 }
 
 .page-nav li {
@@ -116,11 +139,22 @@ div.page-header > first-child {
 
 /* Блок Контакты и карта */
 
+.text-ul li::before{
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  vertical-align: middle;
+  margin-right: 11px;
+  font-size: 18px;
+  background-color: #ee3643;
+  content: "";
+   }
+
 
 /* Подвал страницы: Навигация, Адрес, Категория товара */
 .page-footer {
   background-color: #32425c;
-  font-size: 18pt;
+  font-size: 18px;
 }
 
 .nav-site li {
@@ -138,13 +172,10 @@ list-style-type: none;
   color: #ffd180;
 }
 
-.nav-category li {
-  list-style-type: none;
-}
 
 /* Нижний подвал: Копирайт, Соцсети, Обратная связь*/
 .bottom-footer {
-  font-size: 16pt;
+  font-size: 16px;
     background-color: #293449;
     min-height: 53px;
     color: #ffffff;
@@ -156,4 +187,37 @@ list-style-type: none;
 
 .bottom-footer a {
   color: #ffd180;
+}
+
+.icon-vk::before {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url(../img/icon-vk.svg) no-repeat;
+  background-position: center;
+  background-color: #212a3a;
+  border-radius: 50%;
+  content: "";
+}
+
+.icon-fb::before {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url(../img/icon-fb.svg) no-repeat;
+  background-color: #212a3a;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}
+
+.icon-insta::before {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url(../img/icon-insta.svg) no-repeat;
+  background-color: #212a3a;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
 }

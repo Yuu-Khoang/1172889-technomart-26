@@ -4,33 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт - инструменты, техника, материалы</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-
-      <img src="img/logo-technomart.svg" alt="Компания Техномарт">
-
+<div class="logo">
+    <a href="#nowhere">
+      <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
     </a>
-    <nav>
-      <a href="search.html">Поиск</a>
-      <a href="bookmarks.html">Закладки:</a>
-      <a href="cart.html">Корзина</a>
-      <a href="buy.html">Оформить заказ</a>
-  </nav>
+</div>
+<nav class="top-header">
+  <a href="search.html" class="icon-search">Поиск</a>
+  <a href="bookmarks.html" class="icon-bookmarks">Закладки:</a>
+  <a href="cart.html" class="icon-cart">Корзина</a>
+  <div class="order"><a href="buy.html">Оформить заказ</a></div>
+</nav>
 
-    <div>
-      <p>
-        Интернет-магазин
-        строительных материалов
-        и инструментов для ремонта
-      </p>
-    </div>
+    <div class="page-header">
+
+      <p class="slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+
     <div>
       <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
     </div>
+
     <div>
         <div>
           <p>Равшан Джамшутович</p>
@@ -43,8 +43,9 @@
           <p><a href="my-account.html">Личный кабинет</a></p>
         </div>
     </div>
+</div>
 
-    <nav>
+    <nav class="page-nav">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="company.html">Компания</a></li>
@@ -96,6 +97,7 @@
       </form>
     </section>
 
+    <section>
     <table class="product-list">
       <thead>
         <tr>
@@ -209,6 +211,7 @@
         </tr>
       </tbody>
     </table>
+  </section>
 
     <div class="buy-popup" id="buy-popup">
       <button class="close-popup" type="button" aria-label="Закрыть"></button>
@@ -239,7 +242,11 @@
   <footer>
     <section class="bottom-footer">
     <div>
-        <img src="img/logo-technomart.svg" alt="Компания Техномарт">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
+            </a>
+      </div>
       <nav class="nav-site">
         <ul>
           <li><a href="company.html">Компания</a></li>
@@ -250,7 +257,7 @@
         </ul>
       </nav>
     </div>
-    <div>
+    <div class="footer-contacts">
       <p>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8
         <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
     </div>
@@ -264,16 +271,16 @@
     </nav>
   </section>
 
-    <section class="main-footer">
+    <section class="bottom-footer">
     <div>
       <p>&#169; 2010-2017 Компания &laquo;Техномарт&raquo;
         Все права защищены</p>
     </div>
     <div>
       <ul>
-        <li><a href="https://vk.com/"><span class="visually-hidden">ВКонтакте Техномарт</span></a></li>
-        <li><a href="https://facebook.com/‎"><span class="visually-hidden">Фейсбук Техномарт</span></a></li>
-        <li><a href="https://instagram.com/"><span class="visually-hidden">Инстаграм Техномарт</span></a></li>
+       <li><a href="https://vk.com/" class="icon-vk"><span class="visually-hidden">ВКонтакте Техномарт</span></a></li>
+        <li><a href="https://facebook.com/‎" class="icon-fb"><span class="visually-hidden">Фейсбук Техномарт</span></a></li>
+        <li><a href="https://instagram.com/" class="icon-insta"><span class="visually-hidden">Инстаграм Техномарт</span></a></li>
       </ul>
     </div>
     <div>
