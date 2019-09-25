@@ -1,10 +1,14 @@
 body {
-font-family: 'Cuprum', 'PT Sans', sans-serif;
+font-family: "Cuprum", "PT Sans", sans-serif;
 background-color: #f4f8fa;
 }
 
 h1,h2,h3 {
   text-transform: uppercase;
+}
+
+section {
+  background-color: #ffffff;
 }
 
 a, address {
@@ -13,12 +17,20 @@ a, address {
   font-style: normal;
 }
 
-section {
-  background-color: #ffffff;
+fieldset {
+  font-family: "PT Sans", sans;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+legend {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 button {
-  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-size: 14px;
   color: #ffffff;
   background-color: #ee3643;
@@ -34,15 +46,19 @@ li {
   list-style-type: none;
 }
 
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .description h3 {
@@ -127,7 +143,99 @@ li {
   color: #ee3643;
 }
 
-/* Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
+.contacts-header div{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px #ffffff solid;
+  width: 270px;
+  height: 45px;
+}
+
+.contacts-header a {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.contacts-header .icon-phone::before {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/icon-phone.svg) no-repeat;
+  content: "";
+}
+
+.contacts-header address{
+  font-size: 14px;
+  color: #32425c;
+}
+
+.lk div {
+  background-color: #ffffff;
+}
+
+.lk a{
+  font-size: 21px;
+  color: #000000;
+}
+
+.lk .icon-user::before {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url(../img/icon-user.svg) no-repeat;
+  content: "";
+}
+
+.lk .icon-login::before {
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  background: url(../img/icon-login.svg) no-repeat;
+  content: "";
+}
+
+.lk .icon-logout::after {
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  background: url(../img/icon-logout.svg) no-repeat;
+  content: "";
+}
+
+.lk-action a{
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+/* Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
+.breadcrumbs {
+  font-family: "PT Sans", sans;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a{
+  color: #000000;
+}
+
+.breadcrumbs a::before{
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: url(../img/icon-right-small.svg) no-repeat;
+  content: "";
+}
+
+.breadcrumbs .icon-home::before {
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: url(../img/icon-home.svg) no-repeat;
+  content: "";
+}
+
 .page-nav {
   background-color: #32425c;
   font-size: 17px;
@@ -137,7 +245,33 @@ li {
   list-style-type: none;
 }
 
-/* Блок Контакты и карта */
+/* Каталог товаров */
+.product-item {
+  font-family: "PT Sans", sans;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-price-special {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.product-availability a{
+  background: #63a63e;
+}
+
+/* Блок Контакты и карта на Главной */
 
 .text-ul li::before{
   display: inline-block;
@@ -162,7 +296,7 @@ color: #ffffff;
 list-style-type: none;
 }
 
-.footer-contacts {
+.contacts-footer {
   font-style: normal;
   text-decoration: none;
    color: #ffffff;
