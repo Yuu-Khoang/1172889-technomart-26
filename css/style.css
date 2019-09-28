@@ -81,9 +81,9 @@ overflow: hidden;
 
 /* Логотип компании */
 .logo {
-  background-color: #ee3643;
   width: 220px;
   height: 42px;
+  background-color: #ee3643;
   border-bottom: 5px #b52933 solid;
 }
 
@@ -97,6 +97,8 @@ overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
+  padding-left: 130px;
+  padding-right: 130px;
   font-size: 18px;
   background-color: #293449;
   font-size: 17px;
@@ -136,6 +138,7 @@ overflow: hidden;
 .order {
   width: 220px;
   min-height: 42px;
+  margin-right: 130px;
   text-align: center;
   background: #63a63e;
 }
@@ -144,16 +147,23 @@ overflow: hidden;
   vertical-align: middle;
 }
 
-/* Шапка страницы: Описание магазина, контакты, Личный кабинет */
+/* Шапка страницы: Слоган магазина, контакты, Личный кабинет */
 
 .page-header {
+  height: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 130px;
+margin-left: 130px;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 .slogan {
+  width: 200px;
+  padding-left: 50px;
   font-style: italic;
   font-size: 16px;
   color: #ee3643;
@@ -252,6 +262,7 @@ overflow: hidden;
 .breadcrumbs {
   font-family: "PT Sans", sans;
   font-size: 13px;
+margin-left: 100px;
   text-transform: uppercase;
 }
 
@@ -331,6 +342,17 @@ overflow: hidden;
   content: "";
    }
 
+.description {
+  float: left;
+  width: 540px;
+margin-left: 130px;
+}
+
+.page-map {
+  float: right;
+  width: 300px;
+  margin-right: 130px;
+}
 
 /* Подвал страницы: Навигация, Адрес, Категория товара */
 .page-footer {
@@ -380,15 +402,14 @@ list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1000px;
+  min-height: 53px;
+  padding-left: 130px;
+  padding-right: 130px;
   font-size: 16px;
-    background-color: #293449;
-    background-size: 100%;
-    max-width: 1000px;
-    min-height: 53px;
-    color: #ffffff;
-    padding-left: 130px;
-    padding-right: 130px;
-
+  color: #ffffff;
+  background-color: #293449;
+  background-size: 100%;
 }
 
 .bottom-footer li {
