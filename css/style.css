@@ -1,5 +1,6 @@
 body {
 font-family: "Cuprum", "PT Sans", sans-serif;
+margin: 0px;
 background-color: #f4f8fa;
 }
 
@@ -10,7 +11,6 @@ h1,h2,h3 {
 section {
 background-color: #ffffff;
 }
-
 
 
 a, address {
@@ -63,6 +63,12 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
+.aligning {
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
 .description h3 {
   font-size: 30px;
 }
@@ -97,8 +103,6 @@ overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
-  padding-left: 130px;
-  padding-right: 130px;
   font-size: 18px;
   background-color: #293449;
   font-size: 17px;
@@ -138,14 +142,15 @@ overflow: hidden;
 .order {
   width: 220px;
   min-height: 42px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-right: 130px;
   text-align: center;
   background: #63a63e;
 }
 
-.order a {
-  vertical-align: middle;
-}
 
 /* Шапка страницы: Слоган магазина, контакты, Личный кабинет */
 
@@ -155,8 +160,6 @@ overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 130px;
-margin-left: 130px;
 padding-top: 40px;
 padding-bottom: 40px;
 }
@@ -304,7 +307,15 @@ margin-left: 100px;
 }
 
 /* Каталог товаров */
+.product-list {
+  width: 740px;
+}
+
 .product-item {
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "PT Sans", sans;
   font-size: 17px;
   font-weight: bold;
@@ -345,13 +356,12 @@ margin-left: 100px;
 .description {
   float: left;
   width: 540px;
-margin-left: 130px;
+  margin-right: 100px;
 }
 
 .page-map {
   float: right;
   width: 300px;
-  margin-right: 130px;
 }
 
 /* Подвал страницы: Навигация, Адрес, Категория товара */
@@ -361,8 +371,6 @@ margin-left: 130px;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #32425c;
-  padding-left: 130px;
-  padding-right: 130px;
   font-size: 18px;
   clear: both;
 }
@@ -402,10 +410,7 @@ list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1000px;
   min-height: 53px;
-  padding-left: 130px;
-  padding-right: 130px;
   font-size: 16px;
   color: #ffffff;
   background-color: #293449;
@@ -425,6 +430,7 @@ list-style-type: none;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+float: left;
   width: 245px;
 }
 
