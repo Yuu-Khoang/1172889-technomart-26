@@ -288,6 +288,10 @@ padding-bottom: 40px;
 
 /* Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
 .breadcrumbs {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "PT Sans", sans;
   font-size: 13px;
 margin-left: 100px;
@@ -358,7 +362,7 @@ legend {
 
 /* Каталог товаров */
 .catalog-flex {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
