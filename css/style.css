@@ -66,22 +66,26 @@ overflow: hidden;
 
 .aligning {
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aligning-footer-left {
   width: 380px;
-  margin-left: 130px;
-  margin-right: 0px;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  margin-left: auto;
 }
 
 .aligning-footer-right {
   width: 560px;
-  margin-left: 0px;
-  margin-right: 130px;
-  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  margin-right: auto;
 }
 
 .description h3 {
@@ -306,11 +310,12 @@ margin-left: 100px;
 }
 
 .page-nav {
+  width: 940px;
   display: flex;
   background-color: #32425c;
   font-size: 17px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: auto;
+  margin-right: auto;
   height: 60px;
 }
 
@@ -325,15 +330,15 @@ margin-left: 100px;
 /*Фильтры каталога товаров*/
 legend {
   width: 220px;
-  float: left;
+  margin-left: auto;
   padding-top: 25px;
   border-top: 1px #e5e5e5 solid;
 }
 
 .catalog-filter {
   width: 220px;
-  float: left;
   padding-left: 0px;
+  margin-left: auto;
   margin-right: 20px;
 }
 
@@ -347,6 +352,15 @@ legend {
 
 
 /* Каталог товаров */
+.catalog-flex {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .product-list tbody{
   width: 700px;
@@ -475,6 +489,7 @@ list-style-type: none;
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 245px;
+  margin-left: auto;
 }
 
 .copyright-developer {
@@ -483,14 +498,15 @@ list-style-type: none;
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 245px;
+  margin-right: auto;
 }
 
 .socials ul {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex-grow: 2;
   justify-content: space-between;
-  z-index: 10;
 }
 
 
