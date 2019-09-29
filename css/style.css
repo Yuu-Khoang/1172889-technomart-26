@@ -66,6 +66,11 @@ overflow: hidden;
 
 .aligning {
   width: 940px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  margin-right: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -414,13 +419,19 @@ legend {
    }
 
 .description {
-  float: left;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 540px;
   margin-right: 100px;
 }
 
 .page-map {
-  float: right;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 300px;
 }
 
