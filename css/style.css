@@ -23,6 +23,7 @@ fieldset {
   font-family: "PT Sans", sans;
   font-size: 15px;
   text-transform: uppercase;
+  border: none;
 }
 
 legend {
@@ -67,6 +68,20 @@ overflow: hidden;
   width: 940px;
   margin-left: 130px;
   margin-right: 130px;
+}
+
+.aligning-footer-left {
+  width: 380px;
+  margin-left: 130px;
+  margin-right: 0px;
+  float: left;
+}
+
+.aligning-footer-right {
+  width: 560px;
+  margin-left: 0px;
+  margin-right: 130px;
+  float: right;
 }
 
 .description h3 {
@@ -173,10 +188,11 @@ padding-bottom: 40px;
 }
 
 .contacts-header {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 275px;
 }
 
 .contacts-header div{
@@ -303,17 +319,47 @@ margin-left: 100px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: stretch;
+  justify-content: space-around;
 }
 
+/*Фильтры каталога товаров*/
+legend {
+  width: 220px;
+  float: left;
+  padding-top: 25px;
+  border-top: 1px #e5e5e5 solid;
+}
+
+.catalog-filter {
+  width: 220px;
+  float: left;
+  padding-left: 0px;
+  margin-right: 20px;
+}
+
+.filter-brand {
+  padding: 0px;
+}
+
+.filter-charging {
+  padding: 0px;
+}
+
+
 /* Каталог товаров */
-.product-list {
-  width: 740px;
+
+.product-list tbody{
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-item {
-  display: flexbox;
-  flex-direction: row;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: "PT Sans", sans;
@@ -375,8 +421,6 @@ margin-left: 100px;
   clear: both;
 }
 
-
-
 .nav-site li {
   display: inline-flex;
   flex-direction: row;
@@ -430,7 +474,14 @@ list-style-type: none;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-float: left;
+  width: 245px;
+}
+
+.copyright-developer {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   width: 245px;
 }
 
@@ -438,8 +489,8 @@ float: left;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  flex-grow: 2;
   justify-content: space-between;
+  z-index: 10;
 }
 
 

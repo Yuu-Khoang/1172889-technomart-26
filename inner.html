@@ -72,8 +72,8 @@
     </div>
 
     <h1>Перфораторы</h1>
-
-    <section>
+<div class="aligning">
+    <section class="catalog-filter">
       <form method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
           <legend>Производители:</legend>
@@ -96,7 +96,7 @@
       </form>
     </section>
 
-    <section>
+    <section class="catalog-page">
       <table class="product-list">
         <thead class="visually-hidden">
           <tr>
@@ -211,8 +211,8 @@
         </tbody>
       </table>
     </section>
-
-    <div class="buy-popup" id="buy-popup">
+  </div>
+    <div class="buy-popup visually-hidden" id="buy-popup">
       <button class="close-popup" type="button" aria-label="Закрыть"></button>
       <p>Товар добавлен в корзину!</p>
       <div class="buy-popup-button">
@@ -226,63 +226,70 @@
 
 
   <footer>
-    <section class="page-footer">
-<div>
-        <div class="logo">
-          <a href="#nowhere">
-            <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
-          </a>
+      <section class="page-footer">
+          <div class="aligning-footer-left">
+          <div class="logo">
+            <a href="#nowhere">
+              <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
+            </a>
+          </div>
+                <div class="contacts-footer">
+          <address>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
+          <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         </div>
-              <div class="contacts-footer">
-        <address>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</address>
-        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-      </div>
-      </div>
-         <div>
-        <nav class="nav-site">
+        </div>
+           <div class="aligning-footer-right">
+          <nav class="nav-site">
+            <ul>
+              <li><a href="#nowhere">Компания</a></li>
+              <li><a href="#nowhere">Новости</a></li>
+              <li><a href="inner.html">Каталог</a></li>
+              <li><a href="#nowhere">Доставка</a></li>
+              <li><a href="#nowhere">Контакты</a></li>
+            </ul>
+          </nav>
+               <nav class="nav-category">
           <ul>
-            <li><a href="#nowhere">Компания</a></li>
-            <li><a href="#nowhere">Новости</a></li>
-            <li><a href="inner.html">Каталог</a></li>
-            <li><a href="#nowhere">Доставка</a></li>
-            <li><a href="#nowhere">Контакты</a></li>
+            <li><a href="#nowhere">Материалы</a></li>
+            <li><a href="#nowhere">Техника</a></li>
+            <li><a href="#nowhere">Инструмент</a></li>
+            <li><a href="#nowhere">Спецпредложения</a></li>
           </ul>
         </nav>
-             <nav class="nav-category">
-        <ul>
-          <li><a href="#nowhere">Материалы</a></li>
-          <li><a href="#nowhere">Техника</a></li>
-          <li><a href="#nowhere">Инструмент</a></li>
-          <li><a href="#nowhere">Спецпредложения</a></li>
-        </ul>
-      </nav>
-      </div>
+        </div>
 
 
-    </section>
-    <section class="bottom-footer">
-      <div class="copyright">
-        <p>&#169; 2010-2017 Компания &laquo;Техномарт&raquo;
-        Все права защищены</p>
-      </div>
-      <div class="socials">
-        <ul>
-          <li><a href="https://vk.com/" class="icon-vk"><span class="visually-hidden">ВКонтакте Техномарт</span></a>
-          </li>
-          <li><a href="https://facebook.com/‎" class="icon-fb"><span class="visually-hidden">Фейсбук
-                Техномарт</span></a></li>
-          <li><a href="https://instagram.com/" class="icon-insta"><span class="visually-hidden">Инстаграм
-                Техномарт</span></a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <p>Обратная связь&nbsp;
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано -&nbsp;
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-      </div>
-    </section>
-  </footer>
+      </section>
+      <section class="bottom-footer">
+        <div class="aligning-footer-left">
+        <div class="copyright">
+          <p>&#169; 2010-2017 Компания &laquo;Техномарт&raquo;
+          Все права защищены</p>
+        </div>
+        </div>
+           <div class="socials">
+          <ul>
+            <li><a href="https://vk.com/" class="icon-vk"><span class="visually-hidden">ВКонтакте Техномарт</span></a>
+            </li>
+            <li><a href="https://facebook.com/‎" class="icon-fb"><span class="visually-hidden">Фейсбук
+                  Техномарт</span></a></li>
+            <li><a href="https://instagram.com/" class="icon-insta"><span class="visually-hidden">Инстаграм
+                  Техномарт</span></a></li>
+          </ul>
+        </div>
+         <div class="aligning-footer-right">
+
+
+        <div class="copyright-developer">
+          <p>Обратная связь&nbsp;
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p>Разработано -&nbsp;
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        </div>
+</div>
+
+      </section>
+    </footer>
 </body>
 
 
