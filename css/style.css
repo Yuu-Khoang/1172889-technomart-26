@@ -83,6 +83,8 @@ li {
 }
 
 .close-popup {
+  width: 21px;
+  height: 21px;
   background: url(../img/icon-close.svg) no-repeat;
 }
 
@@ -96,6 +98,8 @@ li {
 }
 
 .logo-header img {
+  width: 109px;
+  height: 19px;
   padding-top: 13px;
   padding-bottom: 9px;
   padding-left: 55px;
@@ -447,6 +451,8 @@ legend {
 }
 
 .logo-footer img {
+  width: 138px;
+  height: 23px;
   padding-top: 21px;
   padding-bottom: 21px;
   padding-left: 42px;
