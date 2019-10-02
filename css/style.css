@@ -66,27 +66,7 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch;
-  margin-right: auto;
   margin-left: auto;
-  margin-right: auto;
-}
-
-.aligning-footer-left {
-  width: 380px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  margin-left: auto;
-}
-
-.aligning-footer-right {
-  width: 560px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: stretch;
   margin-right: auto;
 }
 
@@ -106,17 +86,21 @@ li {
   background: url(../img/icon-close.svg) no-repeat;
 }
 
-/* Логотип компании */
+/* Логотип компании в шапке */
 
-.logo {
+.logo-header {
   width: 220px;
   height: 42px;
+  margin-right: 15px;
   background-color: #ee3643;
-  border-bottom: 5px #b52933 solid;
 }
 
-.logo img {
-  padding: 13px 55px;
+.logo-header img {
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-left: 55px;
+  padding-right: 56px;
+  border-bottom: 5px #b52933 solid;
 }
 
 /* Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ */
@@ -126,14 +110,20 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
+  min-height: 42px;
+  padding-bottom:-8px;
   font-size: 18px;
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
-  padding-top: 18px;
-  padding-bottom: 16px;
+
 }
 
+.top-header a {
+padding-top: 14px;
+padding-bottom: 13px;
+text-align: center;
+}
 .top-header .icon-search::before {
   display: inline-block;
   width: 17px;
@@ -163,15 +153,15 @@ li {
 
 .order {
   width: 220px;
-  min-height: 42px;
-  display: inline-flex;
+  height: 42px;
+display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 130px;
-  text-align: center;
+  justify-content: center;
+  padding-top: 0px;
   background: #63a63e;
 }
+
 
 /* Шапка страницы: Слоган магазина, контакты, Личный кабинет */
 
@@ -316,12 +306,19 @@ li {
 
 .page-nav {
   width: 940px;
+  height: 56px;
   display: flex;
-  background-color: #32425c;
-  font-size: 17px;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
+  font-size: 17px;
+  background-color: #32425c;
+  border-bottom: 4px #293449 solid;
+}
+
+.page-nav ul {
+  width: 100%;
 }
 
 .page-nav li {
@@ -329,7 +326,8 @@ li {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0px auto;
 }
 
 /*Фильтры каталога товаров*/
@@ -420,25 +418,46 @@ legend {
 }
 
 .description {
+  max-width: 530px;
+  min-height: 530px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 540px;
   margin-right: 100px;
 }
 
+
 .page-map {
+  max-width: 310px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 300px;
+
+}
+
+/* Логотип компании в подвале */
+
+.logo-footer {
+  width: 220px;
+  height: 68px;
+  margin-right: 160px;
+  background-color: #ee3643;
+}
+
+.logo-footer img {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 42px;
+  padding-right: 40px;
+  border-bottom: 5px #b52933 solid;
 }
 
 /* Подвал страницы: Навигация, Адрес, Категория товара */
 
 .page-footer {
+  min-height: 193px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -446,6 +465,14 @@ legend {
   background-color: #32425c;
   font-size: 18px;
   clear: both;
+}
+
+.nav-site {
+    min-width: 550px;
+}
+
+.nav-category {
+  min-width: 550px;
 }
 
 .nav-site li {
@@ -458,6 +485,7 @@ legend {
 }
 
 .contacts-footer {
+  margin-right: 50px;
   font-style: normal;
   text-decoration: none;
   color: #ffffff;
@@ -480,8 +508,10 @@ legend {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  min-height: 53px;
+  justify-content: stretch;
+  min-height: 42px;
+  padding-top: 20px;
+  padding-bottom: 9px;
   font-size: 16px;
   color: #ffffff;
   background-color: #293449;
@@ -502,24 +532,41 @@ legend {
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 245px;
-  margin-left: auto;
+  margin: 0px;
 }
+
 
 .copyright-developer {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex-grow: 2;
   justify-content: space-between;
   width: 245px;
-  margin-right: auto;
+  margin: 0px;
+}
+
+.socials {
+width: 135px;
+flex-grow: 3;
+text-align: center;
+justify-content: center;
+margin: 0px;
 }
 
 .socials ul {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  flex-grow: 2;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socials li {
+  margin-right: 4px;
+}
+
+.socials li:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .icon-vk::before {
