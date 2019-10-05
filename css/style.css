@@ -224,24 +224,21 @@ display: inline-flex;
   padding-left: 50px;
   font-style: italic;
   font-size: 16px;
+  line-height: 20px;
   color: #ee3643;
 }
 
-.contacts-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 275px;
-}
 
 .contacts-header div {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
+   width: 270px;
+  min-height: 45px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
   border: 3px #ffffff solid;
-  width: 270px;
-  height: 45px;
+
 }
 
 .contacts-header a {
@@ -253,20 +250,26 @@ display: inline-flex;
   display: inline-block;
   width: 19px;
   height: 19px;
+  padding-left: 13px;
   background: url(../img/icon-phone.svg) no-repeat;
   content: "";
 }
 
 .contacts-header address {
+  margin-top: 10px;
   font-size: 14px;
   color: #32425c;
 }
 
-.lk {
-  display: flex;
+.lk div{
+  min-width: 120px;
+  height: 45px;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .lk-action {
@@ -276,12 +279,9 @@ display: inline-flex;
   justify-content: space-between;
 }
 
-.lk div {
-  background-color: #ffffff;
-  height: 40px;
-}
-
 .lk a {
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 21px;
   color: #000000;
 }
@@ -298,6 +298,8 @@ display: inline-flex;
   display: inline-block;
   width: 20px;
   height: 17px;
+  padding-left: 14px;
+  padding-right: 14px;
   background: url(../img/icon-login.svg) no-repeat;
   content: "";
 }
@@ -449,6 +451,10 @@ legend {
 }
 
 /* Блок Контакты и карта на Главной */
+.text-ul {
+  width: 100%;
+}
+
 
 .text-ul li::before {
   display: inline-block;
