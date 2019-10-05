@@ -487,6 +487,27 @@ legend {
 
 }
 
+.contacts-popup {
+width: 620px;
+min-height: 313px;
+border-top: 7px #ff5257 solid;
+border-bottom: 112px #f4f4f4 solid;
+background-color: #ffffff;
+}
+
+.contacts-popup p {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.contacts-popup textarea {
+width: 460px;
+}
+
 /* Логотип компании в подвале */
 
 .logo-footer {
