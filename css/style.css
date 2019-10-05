@@ -540,6 +540,14 @@ width: 460px;
   clear: both;
 }
 
+.contacts-footer {
+  margin-right: 50px;
+  font-style: normal;
+  line-height: 4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav-site {
     min-width: 550px;
 }
@@ -549,31 +557,37 @@ width: 460px;
 }
 
 .nav-site ul {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #ffffff;
   list-style-type: none;
 }
 
-.contacts-footer {
-  margin-right: 50px;
-  font-style: normal;
-  line-height: 4px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav-category ul {
+.nav-site li {
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-items: right;
 }
 
 .nav-category a {
   color: #ffd180;
+}
+
+
+.nav-category ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.nav-category li {
+  display: inline-flex;
+  align-items: flex-start;
+justify-items: right;
 }
 
 /* Нижний подвал: Копирайт, Соцсети, Обратная связь*/
