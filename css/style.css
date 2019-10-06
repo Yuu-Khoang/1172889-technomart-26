@@ -8,7 +8,11 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-section {
+h3 {
+  font-size: 30px;
+}
+
+main {
   background-color: #ffffff;
 }
 
@@ -31,18 +35,7 @@ legend {
   font-weight: bold;
 }
 
-button {
-  font-family: "Cuprum", "PT Sans", sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #ee3643;
-  height: 38px;
-  min-width: 197px;
-  border: 0px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+
 
 li {
   list-style-type: none;
@@ -70,6 +63,18 @@ li {
   margin-right: auto;
 }
 
+.button {
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ee3643;
+  height: 38px;
+  min-width: 197px;
+  border: 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 .description h3 {
   font-size: 30px;
 }
@@ -80,12 +85,6 @@ li {
 
 .description li {
   font-size: 18px;
-}
-
-.close-popup {
-  width: 21px;
-  height: 21px;
-  background: url(../img/icon-close.svg) no-repeat;
 }
 
 /* Логотип компании в шапке */
@@ -101,10 +100,10 @@ li {
   width: 109px;
   height: 19px;
   padding-top: 13px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   padding-left: 55px;
   padding-right: 56px;
-  border-bottom: 5px #b52933 solid;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 /* Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ */
@@ -115,7 +114,6 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 42px;
-  padding-bottom:-8px;
   font-size: 18px;
   background-color: #293449;
   font-size: 17px;
@@ -137,9 +135,10 @@ text-align: center;
   justify-content: space-between;
 }
 
-.search input[type="submit"] {
-   display: inline-block;
+.button-search {
+  display: inline-block;
   width: 17px;
+  min-width: 17px;
   height: 17px;
   padding-right: 0px;
   padding-left: 5px;
@@ -151,9 +150,10 @@ text-align: center;
 }
 
 .search input[type="text"] {
-  min-height: 42px;
+  min-height: 43px;
   padding: 0px 15px;
   margin: 0px;
+  background-color: #293449;
 }
 
 .bookmarks {
@@ -164,6 +164,7 @@ text-align: center;
   justify-content: space-around;
 }
 
+
 .bookmarks .icon-bookmarks::before {
   display: inline-block;
   width: 17px;
@@ -173,7 +174,6 @@ text-align: center;
   opacity: 0.3;
   content: "";
 }
-
 
 .cart {
 display: inline-flex;
@@ -197,7 +197,6 @@ display: inline-flex;
 
 .order {
   width: 220px;
-  height: 42px;
 display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -487,25 +486,68 @@ legend {
 
 }
 
+/*Pop-up, всплывающие окна*/
+
 .contacts-popup {
 width: 620px;
 min-height: 313px;
+position: fixed;
+z-index: 100;
+margin: 10%;
+padding-left: 80px;
 border-top: 7px #ff5257 solid;
 border-bottom: 112px #f4f4f4 solid;
 background-color: #ffffff;
 }
 
+
 .contacts-popup p {
+  width: 220px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 80px;
-  margin-left: 80px;
+}
+
+.contacts-popup input {
+  width: 200px;
+min-height: 34px;
+font-size: 13px;
+line-height: 18px;
+margin-top: 12px;
+padding-left: 14px;
+border: 2px #dee3e4 solid;
+border-radius: 2px;
 }
 
 .contacts-popup textarea {
 width: 460px;
+font-family: 'PT Sans', sans-serif;
+font-size: 13px;
+line-height: 18px;
+margin-top: 12px;
+padding-left: 14px;
+padding-top: 12px;
+border: 2px #dee3e4 solid;
+border-radius: 2px;
+}
+
+
+.submit-popup {
+width: 460px;
+position: relative;
+left: 0px;
+bottom: -80px;
+text-align: center;
+}
+
+.close-popup {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: 0px;
+  left: 95%;
+  background: url(../img/icon-close.svg) no-repeat;
 }
 
 /* Логотип компании в подвале */
