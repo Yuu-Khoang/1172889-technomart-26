@@ -92,7 +92,6 @@ li {
 .logo-header {
   width: 220px;
   height: 42px;
-  margin-right: 15px;
   background-color: #ee3643;
 }
 
@@ -122,42 +121,76 @@ li {
 }
 
 .top-header a {
-padding-top: 14px;
+padding-top: 10px;
 padding-bottom: 10px;
 text-align: center;
 }
 
 .search {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  position: relative;
+  display: flex;
   flex-grow: 2;
-  justify-content: space-between;
-}
+  }
 
-.button-search {
-  display: inline-block;
-  width: 17px;
-  min-width: 17px;
-  height: 17px;
-  padding-right: 0px;
-  padding-left: 5px;
-  background: url(../img/icon-search.svg) no-repeat;
-  opacity: 0.3;
-  content: "";
-  border: none;
-  cursor: pointer;
-}
+  .search-label {
+  position: absolute;
+  top: 12px;
+  left: 49px;
+  color: #ffffff;
+  }
 
-.search input[type="text"] {
-  min-height: 43px;
-  padding: 0px 15px;
+  .search-input {
+  font: inherit;
+  box-sizing: border-box;
+  padding: 0px 5px;
   margin: 0px;
+  border: none;
+  color: #ffffff;
   background-color: #293449;
-}
+  }
+
+  .search-input:hover {
+  background-color: #212a3a;
+  }
+
+  .search-input:focus,
+  .search-input:valid {
+  z-index: 10;
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+  .search-input:not(:valid) {
+  box-shadow: none;
+  }
+
+  .search-button {
+  font: inherit;
+  order: -1;
+  padding-left: 17px;
+  padding-right: 10px;
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #293449;
+  }
+
+  .search-button:hover {
+  color: #ffffff;
+  background-color: #212a3a;
+  }
+
+  .search-input:valid + .search-button {
+  color: #ee3643;
+  background-color: #ffffff;
+  }
+
+  .icon-search {
+  fill: currentColor;
+  cursor: pointer;
+  }
 
 .bookmarks {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -176,7 +209,7 @@ text-align: center;
 }
 
 .cart {
-display: inline-flex;
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -197,7 +230,7 @@ display: inline-flex;
 
 .order {
   width: 220px;
-display: inline-flex;
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -272,7 +305,7 @@ display: inline-flex;
 }
 
 .lk-action {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -283,6 +316,10 @@ display: inline-flex;
   padding-right: 25px;
   font-size: 21px;
   color: #000000;
+}
+
+.lk a:hover {
+  color: #ee3643;
 }
 
 .lk .icon-user::before {
@@ -317,10 +354,14 @@ display: inline-flex;
   text-decoration: underline;
 }
 
+.lk-action a:hover {
+  color: #ee3643;
+}
+
 /* Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
 
 .breadcrumbs {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -365,7 +406,7 @@ display: inline-flex;
 
 .page-nav ul {
 width: 940px;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
@@ -374,6 +415,7 @@ width: 940px;
  padding-left: 55px;
   padding-right: 55px;
 }
+
 
 /*Фильтры каталога товаров*/
 
@@ -469,7 +511,7 @@ legend {
 .description {
   max-width: 530px;
   min-height: 530px;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -479,7 +521,7 @@ legend {
 
 .page-map {
   max-width: 310px;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -503,7 +545,7 @@ background-color: #ffffff;
 
 .contacts-popup p {
   width: 220px;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -608,15 +650,23 @@ text-align: center;
 }
 
 .nav-site li {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   justify-items: right;
 }
+
+.nav-site a:hover {
+  text-decoration: underline;
+  }
+
 
 .nav-category a {
   color: #ffd180;
 }
 
+.nav-category a:hover {
+text-decoration: underline;
+}
 
 .nav-category ul {
   display: flex;
@@ -627,7 +677,7 @@ text-align: center;
 
 
 .nav-category li {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
 justify-items: right;
 }
@@ -656,8 +706,12 @@ justify-items: right;
   color: #ffd180;
 }
 
+.bottom-footer a:hover {
+  text-decoration: underline;
+}
+
 .copyright {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -667,7 +721,7 @@ justify-items: right;
 
 
 .copyright-developer {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-grow: 2;
