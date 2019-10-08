@@ -12,30 +12,15 @@ h3 {
   font-size: 30px;
 }
 
-main {
-  background-color: #ffffff;
-}
-
-a, address {
+a {
   text-decoration: none;
   color: #ffffff;
   font-style: normal;
 }
 
-fieldset {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  border: none;
-}
-
-legend {
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -64,6 +49,10 @@ legend {
   min-width: 960px;
 }
 
+.content {
+  background-color: #ffffff;
+}
+
 .button {
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
@@ -89,7 +78,7 @@ legend {
   font-size: 18px;
 }
 
-/* Логотип компании в шапке */
+/*  Логотип компании в шапке  */
 
 .logo-header {
   width: 220px;
@@ -107,7 +96,7 @@ legend {
   box-shadow: 0 5px 0 0 #b52933;
 }
 
-/* Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ */
+/*  Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ  */
 
 .top-header {
   display: flex;
@@ -153,7 +142,8 @@ legend {
   background-color: #212a3a;
 }
 
-.search-input:focus, .search-input:valid {
+.search-input:focus,
+.search-input:valid {
   z-index: 10;
   color: #000000;
   background-color: #ffffff;
@@ -178,7 +168,7 @@ legend {
   background-color: #212a3a;
 }
 
-.search-input:valid+.search-button {
+.search-input:valid + .search-button {
   color: #ee3643;
   background-color: #ffffff;
 }
@@ -235,7 +225,7 @@ legend {
   background: #63a63e;
 }
 
-/* Шапка страницы: Слоган магазина, контакты, Личный кабинет */
+/*  Шапка страницы: Слоган магазина, контакты, Личный кабинет  */
 
 .page-header {
   height: 70px;
@@ -283,6 +273,9 @@ legend {
 
 .contacts-header address {
   margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   color: #32425c;
 }
@@ -298,13 +291,6 @@ legend {
   min-width: 120px;
   height: 45px;
   background-color: #ffffff;
-}
-
-.lk-action {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .account a {
@@ -344,17 +330,24 @@ legend {
   content: "";
 }
 
-.lk-action a {
+.account-active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.account-active a {
   font-size: 16px;
   color: #32425c;
   text-decoration: underline;
 }
 
-.lk-action a:hover {
+.account-active a:hover {
   color: #ee3643;
 }
 
-/* Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты */
+/*  Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты  */
 
 .breadcrumbs {
   display: flex;
@@ -413,14 +406,7 @@ legend {
   padding-right: 55px;
 }
 
-/*Фильтры каталога товаров*/
-
-legend {
-  width: 220px;
-  margin-left: auto;
-  padding-top: 25px;
-  border-top: 1px #e5e5e5 solid;
-}
+/*  Фильтры каталога товаров  */
 
 .catalog-filter {
   width: 220px;
@@ -429,17 +415,44 @@ legend {
   margin-right: 20px;
 }
 
-.filter-brand {
+.catalog-filter fieldset {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.filter-brand legend {
+  width: 220px;
+  margin-left: auto;
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  border-top: 1px #e5e5e5 solid;
+}
+
+.filter-brand ul {
   padding: 0px;
   list-style-type: none;
 }
 
-.filter-charging {
+.filter-charging legend {
+  width: 220px;
+  margin-left: auto;
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  border-top: 1px #e5e5e5 solid;
+}
+
+.filter-charging ul {
   padding: 0px;
   list-style-type: none;
 }
 
-/* Каталог товаров */
+/*  Каталог товаров  */
 
 .catalog-flex {
   display: flex;
@@ -489,7 +502,7 @@ legend {
   background: #63a63e;
 }
 
-/* Блок Контакты и карта на Главной */
+/*  Блок Контакты и карта на Главной  */
 
 .text-ul {
   width: 100%;
@@ -529,7 +542,7 @@ legend {
   background: #ffffff;
 }
 
-/*Pop-up, всплывающие окна*/
+/* Pop-up, всплывающие окна */
 
 .contacts-popup {
   width: 620px;
@@ -591,7 +604,7 @@ legend {
   background: url(../img/icon-close.svg) no-repeat;
 }
 
-/* Логотип компании в подвале */
+/*  Логотип компании в подвале  */
 
 .logo-footer {
   width: 220px;
@@ -610,7 +623,7 @@ legend {
   border-bottom: 5px #b52933 solid;
 }
 
-/* Подвал страницы: Навигация, Адрес, Категория товара */
+/*  Подвал страницы: Навигация, Адрес, Категория товара  */
 
 .page-footer {
   min-height: 193px;
@@ -628,6 +641,13 @@ legend {
   font-style: normal;
   line-height: 4px;
   text-decoration: none;
+  color: #ffffff;
+}
+
+.contacts-footer address {
+  margin-top: 10px;
+  text-decoration: none;
+  font-style: normal;
   color: #ffffff;
 }
 
@@ -679,7 +699,7 @@ legend {
   justify-items: right;
 }
 
-/* Нижний подвал: Копирайт, Соцсети, Обратная связь*/
+/*  Нижний подвал: Копирайт, Соцсети, Обратная связь */
 
 .bottom-footer {
   display: flex;
