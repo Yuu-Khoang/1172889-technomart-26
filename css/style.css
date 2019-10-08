@@ -1,5 +1,5 @@
 body {
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   margin: 0px;
   background-color: #f4f8fa;
 }
@@ -35,12 +35,6 @@ legend {
   font-weight: bold;
 }
 
-
-
-li {
-  list-style-type: none;
-}
-
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
@@ -71,7 +65,7 @@ li {
 }
 
 .button {
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   color: #ffffff;
   background-color: #ee3643;
@@ -82,6 +76,7 @@ li {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .description h3 {
   font-size: 30px;
 }
@@ -126,25 +121,25 @@ li {
 }
 
 .top-header a {
-padding-top: 10px;
-padding-bottom: 10px;
-text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .search {
   position: relative;
   display: flex;
   flex-grow: 2;
-  }
+}
 
-  .search-label {
+.search-label {
   position: absolute;
   top: 12px;
   left: 49px;
   color: #ffffff;
-  }
+}
 
-  .search-input {
+.search-input {
   font: inherit;
   box-sizing: border-box;
   padding: 0px 5px;
@@ -152,24 +147,23 @@ text-align: center;
   border: none;
   color: #ffffff;
   background-color: #293449;
-  }
+}
 
-  .search-input:hover {
+.search-input:hover {
   background-color: #212a3a;
-  }
+}
 
-  .search-input:focus,
-  .search-input:valid {
+.search-input:focus, .search-input:valid {
   z-index: 10;
   color: #000000;
   background-color: #ffffff;
-  }
+}
 
-  .search-input:not(:valid) {
+.search-input:not(:valid) {
   box-shadow: none;
-  }
+}
 
-  .search-button {
+.search-button {
   font: inherit;
   order: -1;
   padding-left: 17px;
@@ -177,22 +171,22 @@ text-align: center;
   border: none;
   color: rgba(255, 255, 255, 0.3);
   background-color: #293449;
-  }
+}
 
-  .search-button:hover {
+.search-button:hover {
   color: #ffffff;
   background-color: #212a3a;
-  }
+}
 
-  .search-input:valid + .search-button {
+.search-input:valid+.search-button {
   color: #ee3643;
   background-color: #ffffff;
-  }
+}
 
-  .icon-search {
+.icon-search {
   fill: currentColor;
   cursor: pointer;
-  }
+}
 
 .bookmarks {
   display: flex;
@@ -201,7 +195,6 @@ text-align: center;
   flex-grow: 1;
   justify-content: space-around;
 }
-
 
 .bookmarks .icon-bookmarks::before {
   display: inline-block;
@@ -214,13 +207,12 @@ text-align: center;
 }
 
 .cart {
-display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-around;
 }
-
 
 .cart .icon-cart::before {
   display: inline-block;
@@ -235,14 +227,13 @@ display: flex;
 
 .order {
   width: 220px;
-display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 0px;
   background: #63a63e;
 }
-
 
 /* Шапка страницы: Слоган магазина, контакты, Личный кабинет */
 
@@ -265,17 +256,15 @@ display: flex;
   color: #ee3643;
 }
 
-
 .contacts-header div {
-   width: 270px;
+  width: 270px;
   min-height: 45px;
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
   border: 3px #ffffff solid;
-
 }
 
 .contacts-header a {
@@ -298,14 +287,14 @@ display: flex;
   color: #32425c;
 }
 
-.lk {
+.account {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.lk span {
+.account span {
   min-width: 120px;
   height: 45px;
   background-color: #ffffff;
@@ -318,18 +307,18 @@ display: flex;
   justify-content: space-between;
 }
 
-.lk a {
+.account a {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 21px;
   color: #000000;
 }
 
-.lk a:hover {
+.account a:hover {
   color: #ee3643;
 }
 
-.lk .icon-user::before {
+.account .icon-user::before {
   display: inline-block;
   width: 20px;
   height: 18px;
@@ -337,7 +326,7 @@ display: flex;
   content: "";
 }
 
-.lk .icon-login::before {
+.account .icon-login::before {
   display: inline-block;
   width: 20px;
   height: 17px;
@@ -347,7 +336,7 @@ display: flex;
   content: "";
 }
 
-.lk .icon-logout::after {
+.account .icon-logout::after {
   display: inline-block;
   width: 20px;
   height: 17px;
@@ -375,6 +364,7 @@ display: flex;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .breadcrumbs a {
@@ -398,7 +388,7 @@ display: flex;
 }
 
 .page-nav {
-    width: 940px;
+  width: 940px;
   min-height: 56px;
   display: flex;
   flex-direction: row;
@@ -412,17 +402,16 @@ display: flex;
 }
 
 .page-nav ul {
-width: 940px;
+  width: 940px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
   list-style-type: none;
- padding-left: 55px;
+  padding-left: 55px;
   padding-right: 55px;
 }
-
 
 /*Фильтры каталога товаров*/
 
@@ -442,10 +431,12 @@ legend {
 
 .filter-brand {
   padding: 0px;
+  list-style-type: none;
 }
 
 .filter-charging {
   padding: 0px;
+  list-style-type: none;
 }
 
 /* Каталог товаров */
@@ -499,10 +490,11 @@ legend {
 }
 
 /* Блок Контакты и карта на Главной */
+
 .text-ul {
   width: 100%;
+  list-style-type: none;
 }
-
 
 .text-ul li::before {
   display: inline-block;
@@ -525,34 +517,31 @@ legend {
   margin-right: 100px;
 }
 
-
 .page-map {
   max-width: 310px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
-.page-map img{
+.page-map img {
   background: #ffffff;
 }
 
 /*Pop-up, всплывающие окна*/
 
 .contacts-popup {
-width: 620px;
-min-height: 313px;
-position: fixed;
-z-index: 100;
-margin: 10%;
-padding-left: 80px;
-border-top: 7px #ff5257 solid;
-border-bottom: 112px #f4f4f4 solid;
-background-color: #ffffff;
+  width: 620px;
+  min-height: 313px;
+  position: fixed;
+  z-index: 100;
+  margin: 10%;
+  padding-left: 80px;
+  border-top: 7px #ff5257 solid;
+  border-bottom: 112px #f4f4f4 solid;
+  background-color: #ffffff;
 }
-
 
 .contacts-popup p {
   width: 220px;
@@ -564,34 +553,33 @@ background-color: #ffffff;
 
 .contacts-popup input {
   width: 200px;
-min-height: 34px;
-font-size: 13px;
-line-height: 18px;
-margin-top: 12px;
-padding-left: 14px;
-border: 2px #dee3e4 solid;
-border-radius: 2px;
+  min-height: 34px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 12px;
+  padding-left: 14px;
+  border: 2px #dee3e4 solid;
+  border-radius: 2px;
 }
 
 .contacts-popup textarea {
-width: 460px;
-font-family: "PT Sans", "Arial", sans-serif;
-font-size: 13px;
-line-height: 18px;
-margin-top: 12px;
-padding-left: 14px;
-padding-top: 12px;
-border: 2px #dee3e4 solid;
-border-radius: 2px;
+  width: 460px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 12px;
+  padding-left: 14px;
+  padding-top: 12px;
+  border: 2px #dee3e4 solid;
+  border-radius: 2px;
 }
 
-
 .submit-popup {
-width: 460px;
-position: relative;
-left: 0px;
-bottom: -80px;
-text-align: center;
+  width: 460px;
+  position: relative;
+  left: 0px;
+  bottom: -80px;
+  text-align: center;
 }
 
 .close-popup {
@@ -644,7 +632,7 @@ text-align: center;
 }
 
 .nav-site {
-    min-width: 550px;
+  min-width: 550px;
 }
 
 .nav-category {
@@ -668,15 +656,14 @@ text-align: center;
 
 .nav-site a:hover {
   text-decoration: underline;
-  }
-
+}
 
 .nav-category a {
   color: #ffd180;
 }
 
 .nav-category a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-category ul {
@@ -686,11 +673,10 @@ text-decoration: underline;
   justify-content: space-between;
 }
 
-
 .nav-category li {
   display: flex;
   align-items: flex-start;
-justify-items: right;
+  justify-items: right;
 }
 
 /* Нижний подвал: Копирайт, Соцсети, Обратная связь*/
@@ -730,7 +716,6 @@ justify-items: right;
   margin: 0px;
 }
 
-
 .copyright-developer {
   display: flex;
   flex-direction: row;
@@ -742,11 +727,11 @@ justify-items: right;
 }
 
 .socials {
-width: 135px;
-flex-grow: 3;
-text-align: center;
-justify-content: center;
-margin: 0px;
+  width: 135px;
+  flex-grow: 3;
+  text-align: center;
+  justify-content: center;
+  margin: 0px;
 }
 
 .socials ul {
