@@ -1,21 +1,10 @@
 body {
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   margin: 0px;
-  background-color: #f4f8fa;
-}
-
-h1, h2, h3 {
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 30px;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
-  font-style: normal;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -53,6 +42,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.content-caption {
+  text-transform: uppercase;
+}
+
+.content-caption-h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 .button {
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
@@ -66,16 +64,13 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.description h3 {
-  font-size: 30px;
+.button-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.description p {
-  font-size: 13px;
-}
-
-.description li {
-  font-size: 18px;
+.stylized-background {
+  background-color: #f4f7f9;
 }
 
 /*  Логотип компании в шапке  */
@@ -109,10 +104,12 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.top-header a {
+.top-header-link {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .search {
@@ -258,6 +255,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-header a {
+  text-decoration: none;
   font-size: 21px;
   color: #ee3643;
 }
@@ -293,14 +291,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.account a {
+.account-link {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 21px;
+  text-decoration: none;
   color: #000000;
 }
 
-.account a:hover {
+.account-link:hover {
   color: #ee3643;
 }
 
@@ -337,13 +336,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.account-active a {
+.account-active-link {
   font-size: 16px;
   color: #32425c;
   text-decoration: underline;
 }
 
-.account-active a:hover {
+.account-active-link:hover {
   color: #ee3643;
 }
 
@@ -360,11 +359,12 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs-link {
+  text-decoration: none;
   color: #000000;
 }
 
-.breadcrumbs a::before {
+.breadcrumbs-link::before {
   display: inline-block;
   width: 8px;
   height: 12px;
@@ -404,6 +404,11 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.page-nav-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*  Фильтры каталога товаров  */
@@ -499,6 +504,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-availability a {
+  text-decoration: none;
+  color: #ffffff;
   background: #63a63e;
 }
 
@@ -528,6 +535,14 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-right: 100px;
+}
+
+.description p {
+  font-size: 13px;
+}
+
+.description li {
+  font-size: 18px;
 }
 
 .page-map {
@@ -651,6 +666,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.contacts-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav-site {
   min-width: 550px;
 }
@@ -674,15 +694,22 @@ input[type="radio"].visually-hidden {
   justify-items: right;
 }
 
-.nav-site a:hover {
+.nav-site-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.nav-site-link:hover {
   text-decoration: underline;
 }
 
-.nav-category a {
+.nav-category-link {
+  text-decoration: none;
   color: #ffd180;
 }
 
-.nav-category a:hover {
+.nav-category-link:hover {
   text-decoration: underline;
 }
 
@@ -720,6 +747,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bottom-footer a {
+  text-decoration: none;
   color: #ffd180;
 }
 
