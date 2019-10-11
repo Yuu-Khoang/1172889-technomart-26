@@ -46,6 +46,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.content-caption-h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #32425c;
+}
+
 .content-caption-h3 {
   font-size: 30px;
   text-transform: uppercase;
@@ -53,7 +60,6 @@ input[type="radio"].visually-hidden {
 
 .button {
   font-family: "Cuprum", "Arial Narrow", sans-serif;
-  font-size: 14px;
   color: #ffffff;
   background-color: #ee3643;
   height: 38px;
@@ -61,10 +67,13 @@ input[type="radio"].visually-hidden {
   border: 0px;
   border-radius: 5px;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
 }
 
 .button-link {
+  font-size: 14px;
+  line-height: 40px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -490,6 +499,7 @@ input[type="radio"].visually-hidden {
 
 .product-name {
   font-size: 18px;
+  font-weight: bold;
   line-height: 20px;
 }
 

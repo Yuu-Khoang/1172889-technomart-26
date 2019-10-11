@@ -94,7 +94,12 @@
 
     <div class="catalog-flex">
       <section class="catalog-filter">
+        <div>Фильтр</div>
         <form method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset>
+            <legend>Цена:</legend>
+            <input type="range" min="0" max="30000" step="100" value="15000">
+          </fieldset>
           <fieldset class="filter-brand">
             <legend>Производители:</legend>
             <ul>
@@ -116,7 +121,20 @@
         </form>
       </section>
 
+
+
       <section class="catalog-page">
+
+        <div>Сортировка:
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По функционалу</li>
+        </ul>
+        <button>По возрастанию</button>
+        <button>По убыванию</button>
+      </div>
+
         <table class="product-list">
           <thead class="visually-hidden">
             <tr>
@@ -240,6 +258,16 @@
         </table>
       </section>
     </div>
+
+    <div class="aligning">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>Следующая</li>
+      </ul>
+    </div>
+
     <div class="buy-popup visually-hidden" id="buy-popup">
       <button class="close-popup" type="button" aria-label="Закрыть"></button>
       <p>Товар добавлен в корзину!</p>
@@ -252,6 +280,19 @@
 
   </main>
 
+  <div class="aligning-viewport stylized-background">
+    <section>
+      <div class="aligning">
+        <h3 class="content-caption-h3">Пара слов о перфораторах</h3>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
+          бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+          совмещены отбойный молоток и ударная дрель.</p>
+      </div>
+    </section>
+  </div>
 
   <footer class="aligning-viewport">
     <section class="page-footer">
