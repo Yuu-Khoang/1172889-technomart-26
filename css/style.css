@@ -49,13 +49,6 @@ input[type="radio"].visually-hidden {
 .content-caption-h2 {
   font-size: 30px;
   text-transform: uppercase;
-  font-weight: normal;
-  color: #32425c;
-}
-
-.content-caption-h3 {
-  font-size: 30px;
-  text-transform: uppercase;
 }
 
 .caption-button {
@@ -71,6 +64,13 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
   padding-right: 24px;
   background-color: #f9f5f0;
+}
+
+.caption-button h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #32425c;
 }
 
 .button {
@@ -189,7 +189,7 @@ input[type="radio"].visually-hidden {
   background-color: #212a3a;
 }
 
-.search-input:valid + .search-button {
+.search-input:focus + .search-button {
   color: #ee3643;
   background-color: #ffffff;
 }
@@ -435,6 +435,105 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+/* Плитки на Главной: Материалы, Инструмент, Техника, Скидки, Доставка */
+
+.features-block ul {
+  width: 940px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.features-block-material {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: #ffbf47;
+}
+
+.features-material-icon::after {
+  display: inline-block;
+  width: 44px;
+  height: 65px;
+  background: url(../img/icon-1.svg) no-repeat;
+  background-position: right;
+  content: "";
+}
+
+.features-block-instrument {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: #3bbce3;
+}
+
+.features-instrument-icon::after {
+  display: inline-block;
+  width: 75px;
+  height: 61px;
+  background: url(../img/icon-2.svg) no-repeat;
+  background-position: right;
+  content: "";
+}
+
+.features-block-technics {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: #dc91d8;
+}
+
+.features-technics-icon::after {
+  display: inline-block;
+  width: 78px;
+  height: 62px;
+  background: url(../img/icon-3.svg) no-repeat;
+  background-position: right;
+  content: "";
+}
+
+.features-block-sale {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: #8ed78f;
+}
+
+.features-sale-icon::after {
+  display: inline-block;
+  width: 59px;
+  height: 72px;
+  background: url(../img/icon-4.svg) no-repeat;
+  background-position: right;
+  content: "";
+}
+
+.features-block-delivery {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+  background-color: #ffc047;
+}
+
+.features-delivery-icon::after {
+  display: inline-block;
+  width: 78px;
+  height: 63px;
+  background: url(../img/icon-5.svg) no-repeat;
+  background-position: right;
+  content: "";
+}
+
+.features-block-slider {
+  width: 620px;
+  height: 266px;
+  margin-top: 20px;
+  background-color: #000000;
+}
+
 /*  Фильтры каталога товаров  */
 
 .catalog-filter {
@@ -572,6 +671,35 @@ input[type="radio"].visually-hidden {
 .brands-list {
   display: inline;
   vertical-align: bottom;
+}
+
+/* Сервисы - вкладки: Доставка, Гарантия, Кредит */
+
+.service-info {
+  width: 450px;
+}
+
+.service-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-tabs ul {
+  width: 240px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.service-tabs-caption {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.service-tabs-flipping {
+  width: 700px;
 }
 
 /*  Блок Контакты и карта на Главной  */
