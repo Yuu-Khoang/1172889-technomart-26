@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
 }
 
 .content-caption-h2 {
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
   color: #32425c;
@@ -56,6 +56,21 @@ input[type="radio"].visually-hidden {
 .content-caption-h3 {
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.caption-button {
+  width: 886px;
+  height: 89px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 24px;
+  background-color: #f9f5f0;
 }
 
 .button {
@@ -488,6 +503,7 @@ input[type="radio"].visually-hidden {
 
 .product-item {
   width: 220px;
+  height: 318px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -495,10 +511,15 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: 1px #eaeaea solid;
 }
 
 .product-name {
   font-size: 18px;
+  text-align: center;
   font-weight: bold;
   line-height: 20px;
 }
@@ -517,6 +538,40 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #ffffff;
   background: #63a63e;
+}
+
+/* Популярные товары и популярные производители */
+
+.popular-product tbody {
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popular-brands {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.popular-brands li {
+  width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px #eaeaea solid;
+}
+
+.brands-list {
+  display: inline;
+  vertical-align: bottom;
 }
 
 /*  Блок Контакты и карта на Главной  */
