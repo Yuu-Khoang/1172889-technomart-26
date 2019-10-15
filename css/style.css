@@ -93,6 +93,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
 .stylized-background {
   background-color: #f4f7f9;
 }
@@ -105,7 +113,15 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
-.logo-header img {
+.logo-header:hover {
+  background-color: #ca2c37;
+}
+
+.logo-header:active {
+  background-color: #ba2732;
+}
+
+.logo-header-img {
   width: 109px;
   height: 19px;
   padding-top: 13px;
@@ -113,6 +129,14 @@ input[type="radio"].visually-hidden {
   padding-left: 55px;
   padding-right: 56px;
   box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo-header-img:hover {
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.logo-header-img:active {
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 /*  Верхнее меню: Поиск, Закладки, Корзина, Оформить заказ  */
@@ -134,6 +158,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+.top-header-link:active {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search {
@@ -211,6 +239,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 17px;
   height: 17px;
+  vertical-align: middle;
   padding-right: 12px;
   background: url(../img/icon-bookmarks.svg) no-repeat;
   opacity: 0.3;
@@ -229,6 +258,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 17px;
   height: 17px;
+  vertical-align: middle;
   padding-right: 5px;
   padding-left: 16px;
   background: url(../img/icon-cart.svg) no-repeat;
@@ -244,6 +274,14 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   padding-top: 0px;
   background: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  background-color: #518534;
 }
 
 /*  Шапка страницы: Слоган магазина, контакты, Личный кабинет  */
@@ -288,6 +326,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 19px;
   height: 19px;
+  vertical-align: middle;
   padding-left: 13px;
   background: url(../img/icon-phone.svg) no-repeat;
   content: "";
@@ -303,6 +342,7 @@ input[type="radio"].visually-hidden {
 }
 
 .account {
+  min-width: 120px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -310,8 +350,9 @@ input[type="radio"].visually-hidden {
 }
 
 .account span {
-  min-width: 120px;
-  height: 45px;
+  height: 35px;
+  margin-left: 10px;
+  padding-top: 10px;
   background-color: #ffffff;
 }
 
@@ -327,10 +368,15 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
+.account-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .account .icon-user::before {
   display: inline-block;
   width: 20px;
   height: 18px;
+  vertical-align: middle;
   background: url(../img/icon-user.svg) no-repeat;
   content: "";
 }
@@ -339,6 +385,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 20px;
   height: 17px;
+  vertical-align: middle;
   padding-left: 14px;
   padding-right: 14px;
   background: url(../img/icon-login.svg) no-repeat;
@@ -349,6 +396,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 20px;
   height: 17px;
+  vertical-align: middle;
   background: url(../img/icon-logout.svg) no-repeat;
   content: "";
 }
@@ -368,6 +416,10 @@ input[type="radio"].visually-hidden {
 
 .account-active-link:hover {
   color: #ee3643;
+}
+
+.account-active-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*  Хлебные крошки и Навигация по странице: Главная, Компания, Каталог, Новости, Спецпредложения, Доставка, Контакты  */
@@ -400,6 +452,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 8px;
   height: 12px;
+  vertical-align: middle;
   background: url(../img/icon-home.svg) no-repeat;
   content: "";
 }
@@ -413,26 +466,49 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  font-size: 17px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 30px;
   background-color: #32425c;
   border-bottom: 4px #293449 solid;
 }
 
 .page-nav ul {
   width: 940px;
+  min-height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
+  margin: 0px;
   padding-left: 55px;
   padding-right: 55px;
 }
 
 .page-nav-link {
+  display: inline-block;
+  min-width: auto;
+  min-height: 56px;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: #ffffff;
+}
+
+.page-nav-link:hover {
+  width: 140%;
+  background-color: #293449;
+}
+
+.page-nav-link:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Плитки на Главной: Материалы, Инструмент, Техника, Скидки, Доставка */
@@ -450,6 +526,10 @@ input[type="radio"].visually-hidden {
 .features-block-slider {
   width: 620px;
   height: 266px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -460,24 +540,64 @@ input[type="radio"].visually-hidden {
 
 .features-block-material {
   width: 300px;
-  height: 123px;
+  min-height: 123px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 0px;
   margin-bottom: 20px;
   margin-right: 20px;
   background-color: #ffbf47;
 }
 
 .features-material-icon::after {
-  display: inline-block;
   width: 44px;
   height: 65px;
+  display: inline-block;
+  margin-left: 35px;
+  margin-bottom: 0px;
+  vertical-align: top;
   background: url(../img/icon-1.svg) no-repeat;
-  background-position: right;
   content: "";
+}
+
+.features-block-caption {
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 23px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.features-block-button {
+  width: 135px;
+  min-height: 38px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: auto;
+  margin-left: 23px;
+  padding-top: 14px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.features-block-button a {
+  color: #ffffff;
 }
 
 .features-block-instrument {
   width: 300px;
   height: 123px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 20px;
   margin-right: 20px;
   background-color: #3bbce3;
@@ -487,6 +607,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 75px;
   height: 61px;
+  vertical-align: middle;
   background: url(../img/icon-2.svg) no-repeat;
   background-position: right;
   content: "";
@@ -520,6 +641,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 59px;
   height: 72px;
+  vertical-align: middle;
   background: url(../img/icon-4.svg) no-repeat;
   background-position: right;
   content: "";
@@ -536,12 +658,17 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 78px;
   height: 63px;
+  vertical-align: middle;
   background: url(../img/icon-5.svg) no-repeat;
   background-position: right;
   content: "";
 }
 
 /*  Фильтры каталога товаров  */
+.filter-background {
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
 
 .catalog-filter {
   width: 220px;
@@ -587,6 +714,22 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
+.product-sorting {
+  max-width: 700px;
+  min-height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.sorting-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
 /*  Каталог товаров  */
 
 .catalog-flex {
@@ -609,7 +752,7 @@ input[type="radio"].visually-hidden {
 
 .product-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -621,6 +764,10 @@ input[type="radio"].visually-hidden {
   padding-bottom: 20px;
   text-align: center;
   border: 1px #eaeaea solid;
+}
+
+.product-item:hover {
+  box-shadow: 5px 5px 25px rgba(41, 52, 73, 0.5);
 }
 
 .product-name {
@@ -667,17 +814,38 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
-.popular-brands li {
+.brands-list {
   width: 220px;
   height: 145px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
-  text-align: center;
   border: 1px #eaeaea solid;
 }
 
-.brands-list {
-  display: inline;
-  vertical-align: bottom;
+.brands-list:hover {
+  box-shadow: 5px 5px 25px rgba(41, 52, 73, 0.5);
+}
+
+.brands-list:active {
+  box-shadow: 2px 2px 10px rgba(41, 52, 73, 0.5);
+}
+
+.brands-list:active img {
+  filter: alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+.turn-pages {
+  max-width: 700px;
+  min-height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 /* Сервисы - вкладки: Доставка, Гарантия, Кредит */
@@ -690,23 +858,67 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: top;
   justify-content: space-between;
 }
 
 .service-tabs ul {
   width: 240px;
-  padding: 0px;
   list-style-type: none;
+  padding: 0px;
 }
 
 .service-tabs-caption {
+  margin-top: 10px;
   font-size: 36px;
   text-transform: uppercase;
   color: #32425c;
 }
 
+.service-tabs-list {
+  width: 220px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  background-color: #32425c;
+  border-top: 1px #405069 solid;
+  border-bottom: 1px #293449 solid;
+}
+
+.service-tabs-list a {
+  color: #ffffff;
+}
+
 .service-tabs-flipping {
   width: 700px;
+  min-height: 280px;
+  z-index: 10;
+  box-shadow: -5px 0 5px -5px rgba(81, 255, 0, 1);
+}
+
+.service-flipping-delivery {
+  max-width: 307px;
+  display: block;
+  margin-top: 0px;
+  padding-left: 60px;
+}
+
+.service-flipping-guarantee {
+  max-width: 418px;
+  height: auto;
+  display: block;
+  margin-top: 0px;
+  margin-left: 60px;
+}
+
+.service-flipping-credit {
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin-top: 0px;
+  margin-left: 60px;
 }
 
 /*  Блок Контакты и карта на Главной  */
@@ -753,7 +965,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.page-map img {
+.page-map-img {
   background: #ffffff;
 }
 
@@ -828,7 +1040,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
-.logo-footer img {
+.logo-footer-img {
   width: 138px;
   height: 23px;
   padding-top: 21px;
@@ -904,6 +1116,11 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.nav-site-link:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
 .nav-category-link {
   text-decoration: none;
   color: #ffd180;
@@ -911,6 +1128,11 @@ input[type="radio"].visually-hidden {
 
 .nav-category-link:hover {
   text-decoration: underline;
+}
+
+.nav-category-link:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
 }
 
 .nav-category ul {
@@ -953,6 +1175,11 @@ input[type="radio"].visually-hidden {
 
 .bottom-footer a:hover {
   text-decoration: underline;
+}
+
+.bottom-footer a:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .copyright {
@@ -1001,6 +1228,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 42px;
   height: 42px;
+  vertical-align: middle;
   background: url(../img/icon-vk.svg) no-repeat;
   background-position: center;
   background-color: #212a3a;
@@ -1008,10 +1236,15 @@ input[type="radio"].visually-hidden {
   content: "";
 }
 
+.icon-vk:hover {
+  background-color: #ee3643;
+}
+
 .icon-fb::before {
   display: inline-block;
   width: 42px;
   height: 42px;
+  vertical-align: middle;
   background: url(../img/icon-fb.svg) no-repeat;
   background-color: #212a3a;
   background-position: center;
@@ -1023,6 +1256,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 42px;
   height: 42px;
+  vertical-align: middle;
   background: url(../img/icon-insta.svg) no-repeat;
   background-color: #212a3a;
   background-position: center;

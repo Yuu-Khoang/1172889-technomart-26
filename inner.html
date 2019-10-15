@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт - инструменты, техника, материалы</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+    rel="stylesheet">
   <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 
@@ -15,7 +19,7 @@
       <div class="aligning">
         <div class="logo-header">
           <a href="index.html">
-            <img src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
+            <img class="logo-header-img" src="img/logo-technomart.svg" width="109" height="19" alt="Компания Техномарт">
           </a>
         </div>
 
@@ -95,9 +99,9 @@
 
     <div class="catalog-flex">
       <section class="catalog-filter">
-        <div>Фильтр</div>
+        <div class="filter-background">Фильтр</div>
         <form method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset>
+          <fieldset class="filter-background">
             <legend>Цена:</legend>
             <input type="range" min="0" max="30000" step="100" value="15000">
           </fieldset>
@@ -126,15 +130,18 @@
 
       <section class="catalog-page">
 
-        <div>Сортировка:
-        <ul>
-          <li><a href="#nowhere">По цене</a></li>
-          <li><a href="#nowhere">По типу</a></li>
-          <li><a href="#nowhere">По функционалу</a></li>
-          <li><a href="#nowhere">По возрастанию</a></li>
-          <li><a href="#nowhere">По убыванию</a></li>
-        </ul>
-      </div>
+        <div class="filter-background">
+          <ul class="product-sorting">
+            <li>Сортировка:</li>
+          <ul class="sorting-type">
+            <li><a href="#nowhere">По цене</a></li>
+            <li><a href="#nowhere">По типу</a></li>
+            <li><a href="#nowhere">По функционалу</a></li>
+            <li><a href="#nowhere">По возрастанию</a></li>
+            <li><a href="#nowhere">По убыванию</a></li>
+          </ul>
+          </ul>
+        </div>
 
         <table class="product-list">
           <thead class="visually-hidden">
@@ -257,17 +264,18 @@
             </tr>
           </tbody>
         </table>
+
+        <ul class="turn-pages">
+          <li><a href="#nowhere">1</a></li>
+          <li><a href="#nowhere">2</a></li>
+          <li><a href="#nowhere">3</a></li>
+          <li><a href="#nowhere">Следующая</a></li>
+        </ul>
+
       </section>
     </div>
 
-    <div class="aligning">
-      <ul>
-        <li><a href="#nowhere">1</a></li>
-        <li><a href="#nowhere">2</a></li>
-        <li><a href="#nowhere">3</a></li>
-        <li><a href="#nowhere">Следующая</a></li>
-      </ul>
-    </div>
+
 
     <div class="buy-popup visually-hidden" id="buy-popup">
       <button class="close-popup" type="button" aria-label="Закрыть"></button>
@@ -299,7 +307,7 @@
       <div class="aligning">
         <div class="logo-footer">
           <a href="index.html">
-            <img src="img/logo-technomart.svg" width="138" height="23" alt="Компания Техномарт">
+            <img class="logo-footer-img" src="img/logo-technomart.svg" width="138" height="23" alt="Компания Техномарт">
           </a>
         </div>
 
