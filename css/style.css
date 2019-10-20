@@ -471,7 +471,6 @@ input[type="radio"].visually-hidden {
 
 .page-nav {
   width: 940px;
-  min-height: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -481,7 +480,8 @@ input[type="radio"].visually-hidden {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 17px;
+  text-align: center;
   background-color: #32425c;
   border-bottom: 4px #293449 solid;
 }
@@ -493,29 +493,26 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   margin: 0px;
-  padding-left: 55px;
-  padding-right: 55px;
 }
 
 .page-nav-link {
   display: inline-block;
   min-width: auto;
-  min-height: 50px;
+  min-height: 20px;
   margin: 0px;
-  padding-top: 10px;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   vertical-align: middle;
   text-decoration: none;
   color: #ffffff;
 }
 
 .page-nav-link:hover {
-  width: 100%;
   background-color: #293449;
 }
 
@@ -762,7 +759,7 @@ input[type="radio"].visually-hidden {
 .features-slider-img {
   width: 620px;
   min-height: 266px;
-  position: relative;
+  position: absolute;
   z-index: 0;
   margin-top: -205px;
   margin-bottom: -20px;
@@ -919,6 +916,11 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #ffffff;
   background: #63a63e;
+}
+
+.description-perforator {
+  min-height: 260px;
+  padding-top: 50px;
 }
 
 /* Популярные товары и популярные производители */
