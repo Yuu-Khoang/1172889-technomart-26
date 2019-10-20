@@ -703,13 +703,24 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
-.features-slider-content {
+.features-slider-drills {
+  z-index: 0;
+  position: absolute;
+}
+
+.features-slider-perforator {
+  z-index: 0;
+  position: absolute;
+}
+
+.slider-visible {
+  z-index: 5;
   position: absolute;
 }
 
 .features-slider-caption {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 36px;
@@ -719,7 +730,7 @@ input[type="radio"].visually-hidden {
 
 .features-slider-description {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   margin-top: 8px;
   font-size: 18px;
   color: #ffffff;
@@ -736,7 +747,7 @@ input[type="radio"].visually-hidden {
 .features-slider-previous {
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   width: 22px;
   height: 40px;
   vertical-align: middle;
@@ -746,7 +757,7 @@ input[type="radio"].visually-hidden {
 .features-slider-next {
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   width: 22px;
   height: 40px;
   vertical-align: middle;
@@ -762,7 +773,6 @@ input[type="radio"].visually-hidden {
   width: 620px;
   min-height: 266px;
   position: relative;
-  z-index: 0;
   margin-top: -205px;
   margin-bottom: -20px;
   margin-left: -25px;
@@ -1034,10 +1044,23 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.service-tabs ul {
+.service-tabs-name {
   width: 240px;
+  position: relative;
   list-style-type: none;
   padding: 0px;
+}
+
+.service-tabs-name::after {
+  width: 10px;
+  height: 279px;
+  z-index: 5;
+  position: absolute;
+  top: -50px;
+  left: 240px;
+  background-image: url(../img/slider-tabs-shadow.png);
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .service-tabs-caption {
@@ -1089,17 +1112,6 @@ input[type="radio"].visually-hidden {
   z-index: 10;
   padding-left: 0px;
   margin-left: 0px;
-  background-image: url(../img/slider-tabs-shadow.png);
-}
-
-.service-tabs ul::after {
-  width: 20px;
-  display: inline-block;
-  position: absolute;
-  z-index: 20;
-  background-image: url(../img/slider-tabs-shadow.png);
-  background-repeat: no-repeat;
-  content: "";
 }
 
 .service-flipping-delivery {
