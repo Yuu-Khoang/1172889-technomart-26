@@ -908,20 +908,21 @@ input[type="radio"].visually-hidden {
 }
 
 .product-price {
-  width: 140px;
-  min-height: 25px;
-  padding-top: 5px;
+  width: 141px;
+  min-height: 38px;
+  margin-top: 13px;
+  padding-top: 10px;
+  line-height: 18px;
   color: #ffffff;
-  background:
-  linear-gradient(-135deg, transparent 10px, #ee3643 0) top right,
-  linear-gradient(-45deg, transparent 10px, #ee3643 0) bottom right;
+  background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
-  background-size: 50% 50%;
 }
 
 .product-price-special {
-  color: #999999;
+  margin-top: 18px;
+  line-height: 18px;
   text-decoration: line-through;
+  color: #999999;
 }
 
 .product-availability a {
@@ -1042,6 +1043,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   align-items: top;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .service-tabs-name {
@@ -1054,10 +1056,10 @@ input[type="radio"].visually-hidden {
 .service-tabs-name::after {
   width: 10px;
   height: 279px;
-  z-index: 5;
+  z-index: 15;
   position: absolute;
   top: -50px;
-  left: 240px;
+  left: 230px;
   background-image: url(../img/slider-tabs-shadow.png);
   background-repeat: no-repeat;
   content: "";
@@ -1102,14 +1104,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.service-tabs-link:active {
+.service-tabs-link:target {
   color: #32425c;
 }
 
 .service-tabs-flipping {
   width: 700px;
   min-height: 280px;
-  z-index: 10;
   padding-left: 0px;
   margin-left: 0px;
 }
@@ -1127,7 +1128,6 @@ input[type="radio"].visually-hidden {
   min-height: 280px;
   display: block;
   position: absolute;
-  z-index: 20;
   background: url(../img/service-delivery.png) no-repeat;
   background-position-x: 220px;
   background-position-y: 22px;
@@ -1170,6 +1170,10 @@ input[type="radio"].visually-hidden {
   background: url(../img/service-credit.png) no-repeat;
   background-position-x: 220px;
   background-color: #f4f7f9;
+}
+
+.service-slide:target {
+  z-index: 20;
 }
 
 /*  Блок Контакты и карта на Главной  */
