@@ -899,6 +899,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -908,7 +909,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   border: 1px #eaeaea solid;
 }
-
 
 .product-photo {
   width: 218px;
@@ -925,6 +925,17 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-weight: bold;
   line-height: 20px;
+}
+
+.product-mark {
+  width: 60px;
+  height: 59px;
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  background-image: url(../img/icon-new.png);
+  background-repeat: no-repeat;
 }
 
 .product-price {
@@ -946,10 +957,10 @@ input[type="radio"].visually-hidden {
 }
 
 .product-availability {
-  width: 215px;
-  min-height: 100px;
-  padding-top: 43px;
-  z-index: 0;
+  width: 217px;
+  min-height: 130px;
+  margin-top: -10px;
+  padding-top: 50px;
   position: absolute;
   display: flex;
   flex-direction: column;
