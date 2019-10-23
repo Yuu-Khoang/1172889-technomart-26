@@ -811,6 +811,78 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.catalog-filter button {
+  width: 140px;
+  height: 38px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px #e5e5e5 solid;
+  border-radius: 5px;
+}
+
+.filter-price {
+  width: 220px;
+  padding-left: 0px;
+}
+
+.filter-price legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-range {
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .controls-min {
+  position: absolute;
+  left: 160px;
+  background-image: url(../img/filter-button.svg);
+}
+
+.range-controls .controls-max {
+  position: absolute;
+  left: 160px;
+  background-image: url(../img/filter-button.svg);
+}
+
+.price-controls input {
+  width: 90px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  background-color: #f7f3ec;
+  border: 0px;
+}
+
 .filter-brand legend {
   width: 220px;
   margin-left: auto;
@@ -927,6 +999,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-name {
+  width: 160px;
+  min-height: 40px;
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -936,7 +1010,7 @@ input[type="radio"].visually-hidden {
 .product-mark {
   width: 60px;
   height: 59px;
-  z-index: 5;
+  z-index: 11;
   position: absolute;
   top: 0px;
   right: -2px;
@@ -1119,7 +1193,6 @@ input[type="radio"].visually-hidden {
 }
 
 .brands-list:active img {
-  filter: alpha(Opacity=30);
   opacity: 0.3;
 }
 
@@ -1661,7 +1734,7 @@ input[type="radio"].visually-hidden {
 }
 
 .icon-vk:hover {
-  background-color: #ee3643;
+  fill: #ee3643;
 }
 
 .icon-fb::before {

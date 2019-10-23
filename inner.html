@@ -103,9 +103,24 @@
       <section class="catalog-filter">
         <div class="filter-background">Фильтр</div>
         <form method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset class="filter-charging">
+          <fieldset class="filter-price">
             <legend>Цена:</legend>
-            <input class="filter-background" type="range" min="0" max="30000" step="100" value="15000">
+            <div class="price-range">
+              <div class="range-controls filter-background">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="controls-min"></div>
+                <div class="controls-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price visually-hidden" for="min-price"> от</label>
+                <input name="min-price" id="min-price" type="text" value="0">
+
+                <label class="max-price visually-hidden" for="max-price">до</label>
+                <input name="max-price" id="max-price" type="text" value="30000">
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-brand">
             <legend>Производители:</legend>
