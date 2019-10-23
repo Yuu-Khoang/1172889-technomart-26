@@ -173,6 +173,8 @@ input[type="radio"].visually-hidden {
 .top-header-link {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -335,6 +337,10 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-header a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-decoration: none;
   font-size: 21px;
   color: #ee3643;
@@ -1009,13 +1015,16 @@ input[type="radio"].visually-hidden {
   width: 17px;
   height: 17px;
   vertical-align: middle;
-  padding-left: 10px;
   background: url(../img/icon-cart.svg) no-repeat;
   opacity: 0.3;
   content: "";
 }
 
 .buy-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 30px;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1516,6 +1525,8 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-site-link {
+  padding-top: 5px;
+  padding-bottom: 10px;
   text-decoration: none;
   color: #ffffff;
   font-style: normal;
@@ -1531,6 +1542,8 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-category-link {
+  padding-top: 5px;
+  padding-bottom: 10px;
   text-decoration: none;
   color: #ffd180;
 }
@@ -1578,6 +1591,8 @@ input[type="radio"].visually-hidden {
 }
 
 .bottom-footer a {
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
   color: #ffd180;
 }
