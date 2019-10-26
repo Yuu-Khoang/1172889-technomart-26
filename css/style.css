@@ -296,6 +296,11 @@ input[type="radio"].visually-hidden {
   background: #63a63e;
 }
 
+.order a {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .order:hover {
   background-color: #5fbb2d;
 }
@@ -807,6 +812,7 @@ input[type="radio"].visually-hidden {
 .catalog-filter fieldset {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
+  line-height: 20px;
   text-transform: uppercase;
   border: none;
 }
@@ -822,6 +828,66 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+.filter-option {
+  margin-bottom: 20px;
+}
+
+.filter-option label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  width: 27px;
+  height: 23px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+}
+
+.filter-input-checkbox:checked + label::after {
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+}
+
+.filter-input-radio + label::before {
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+}
+
+.filter-input-radio:checked + label::after {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+}
+
 .filter-price {
   width: 220px;
   padding-left: 0px;
@@ -835,12 +901,12 @@ input[type="radio"].visually-hidden {
 }
 
 .price-range {
-  margin-top: 49px;
+  margin-top: 10px;
 }
 
 .range-controls {
   position: relative;
-  height: 80px;
+  height: 41px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
@@ -850,6 +916,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .scale {
   height: 2px;
+  background: #d7dcde;
 }
 
 .range-controls .bar {
@@ -858,16 +925,33 @@ input[type="radio"].visually-hidden {
   background: #00ca74;
 }
 
-.range-controls .controls-min {
+.toggle {
   position: absolute;
-  left: 160px;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  background-color: #ababab;
   background-image: url(../img/filter-button.svg);
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px #ffffff solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .controls-min {
+  left: 10px;
 }
 
 .range-controls .controls-max {
-  position: absolute;
-  left: 160px;
-  background-image: url(../img/filter-button.svg);
+  left: 130px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
 }
 
 .price-controls input {
@@ -883,10 +967,30 @@ input[type="radio"].visually-hidden {
   border: 0px;
 }
 
+.price-controls span {
+  width: 15px;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  background-color: #000000;
+}
+
+.filter-brand {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.filter-brand input {
+  display: none;
+}
+
 .filter-brand legend {
   width: 220px;
   margin-left: auto;
+  margin-right: 10px;
   padding-top: 25px;
+  padding-left: 0px;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
@@ -898,10 +1002,20 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
+.filter-charging {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.filter-charging input {
+  display: none;
+}
+
 .filter-charging legend {
   width: 220px;
   margin-left: auto;
   padding-top: 25px;
+  padding-left: 0px;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
@@ -1245,6 +1359,11 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border: 1px #e5e5e5 solid;
   border-radius: 5px;
+}
+
+.turn-pages-pointer a {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .turn-pages-pointer:hover {

@@ -110,13 +110,13 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="controls-min"></div>
-                <div class="controls-max"></div>
+                <div class="toggle controls-min"></div>
+                <div class="toggle controls-max"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price visually-hidden" for="min-price"> от</label>
                 <input name="min-price" id="min-price" type="text" value="0">
-
+                <span>&nbsp;</span>
                 <label class="max-price visually-hidden" for="max-price">до</label>
                 <input name="max-price" id="max-price" type="text" value="30000">
               </div>
@@ -125,18 +125,44 @@
           <fieldset class="filter-brand">
             <legend>Производители:</legend>
             <ul>
-              <li><label><input type="checkbox" name="brand" value="BOSCH" checked>Bosch</label></li>
-              <li><label><input type="checkbox" name="brand" value="INTERSKOL">Интерскол</label></li>
-              <li><label><input type="checkbox" name="brand" value="MAKITA" checked>Makita</label></li>
-              <li><label><input type="checkbox" name="brand" value="DEWALT">Dewalt</label></li>
-              <li><label><input type="checkbox" name="brand" value="HITACHI">Hitachi</label></li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-bosch"
+                  value="BOSCH" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-interscol"
+                  value="INTERSKOL">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-makita"
+                  value="MAKITA" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-dewalt"
+                  value="DEWALT">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-hitachi"
+                  value="HITACHI">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="filter-charging">
             <legend>Питание:</legend>
             <ul>
-              <li><label><input type="radio" name="charging" value="Accumulator" checked>Аккумуляторные</label></li>
-              <li><label><input type="radio" name="charging" value="Socket">Сетевые</label></li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="charging" id="accumulator" value="Accumulator" checked>
+                <label for="filter-accumulator">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="charging" id="filter-socket" value="Socket">
+                <label for="filter-socket">Сетевые</label>
+              </li>
             </ul>
           </fieldset>
           <button type="submit">Показать</button>
