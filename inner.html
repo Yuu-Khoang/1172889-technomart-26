@@ -90,7 +90,7 @@
           <li class="icon-home"><a href="index.html"></a></li>
           <li><a class="breadcrumbs-link">Каталог</a></li>
           <li><a class="breadcrumbs-link" href="#nowhere">Инструмент</a></li>
-          <li><a class="breadcrumbs-link" href="#nowhere">Перфораторы</a></li>
+          <li><a class="breadcrumbs-link" href="inner.html">Перфораторы</a></li>
         </ul>
       </nav>
     </div>
@@ -126,27 +126,27 @@
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-bosch"
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-bosch"
                   value="BOSCH" checked>
                 <label for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-interscol"
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-interscol"
                   value="INTERSKOL">
                 <label for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-makita"
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-makita"
                   value="MAKITA" checked>
                 <label for="filter-makita">Makita</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-dewalt"
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-dewalt"
                   value="DEWALT">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="brand" id="filter-hitachi"
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-hitachi"
                   value="HITACHI">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
@@ -156,11 +156,11 @@
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio" type="radio" name="charging" id="accumulator" value="Accumulator" checked>
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging" id="accumulator" value="Accumulator" checked>
                 <label for="filter-accumulator">Аккумуляторные</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio" type="radio" name="charging" id="filter-socket" value="Socket">
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging" id="filter-socket" value="Socket">
                 <label for="filter-socket">Сетевые</label>
               </li>
             </ul>
@@ -174,8 +174,7 @@
       <section class="catalog-page">
 
         <div class="filter-background product-sorting">
-          <ul class="sorting-type">
-            <li>Сортировка:</li>
+          <p>Сортировка:</p>
             <ul class="sorting-type">
               <li><a href="#nowhere">По цене</a></li>
               <li><a href="#nowhere">По типу</a></li>
@@ -183,7 +182,6 @@
               <li><a href="#nowhere">По возрастанию</a></li>
               <li><a href="#nowhere">По убыванию</a></li>
             </ul>
-          </ul>
         </div>
 
         <table class="product-list">

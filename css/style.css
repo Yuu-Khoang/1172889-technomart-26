@@ -981,10 +981,6 @@ input[type="radio"].visually-hidden {
   padding-left: 0px;
 }
 
-.filter-brand input {
-  display: none;
-}
-
 .filter-brand legend {
   width: 220px;
   margin-left: auto;
@@ -1005,10 +1001,6 @@ input[type="radio"].visually-hidden {
 .filter-charging {
   margin-left: 0px;
   padding-left: 0px;
-}
-
-.filter-charging input {
-  display: none;
 }
 
 .filter-charging legend {
@@ -1050,7 +1042,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
 }
 
