@@ -68,10 +68,10 @@
     </div>
 
     <nav class="page-nav">
-      <ul>
-        <li><a class="page-nav-link" href="index.html">Главная</a></li>
+      <ul class="page-nav-list">
+        <li><a class="page-nav-link">Главная</a></li>
         <li><a class="page-nav-link" href="#nowhere">Компания</a></li>
-        <li><a class="page-nav-link">Каталог</a></li>
+        <li><a class="page-nav-link" href="inner.html">Каталог</a></li>
         <li><a class="page-nav-link" href="#nowhere">Новости</a></li>
         <li><a class="page-nav-link" href="#nowhere">Спецпредложения</a></li>
         <li><a class="page-nav-link" href="#nowhere">Доставка</a></li>
@@ -127,28 +127,28 @@
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-bosch"
-                  value="BOSCH" checked>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand"
+                  id="filter-bosch" value="BOSCH" checked>
                 <label for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-interscol"
-                  value="INTERSKOL">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand"
+                  id="filter-interscol" value="INTERSKOL">
                 <label for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-makita"
-                  value="MAKITA" checked>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand"
+                  id="filter-makita" value="MAKITA" checked>
                 <label for="filter-makita">Makita</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-dewalt"
-                  value="DEWALT">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand"
+                  id="filter-dewalt" value="DEWALT">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand" id="filter-hitachi"
-                  value="HITACHI">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brand"
+                  id="filter-hitachi" value="HITACHI">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
@@ -157,11 +157,13 @@
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging" id="filter-accumulator" value="Accumulator" checked>
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging"
+                  id="filter-accumulator" value="Accumulator" checked>
                 <label for="filter-accumulator">Аккумуляторные</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging" id="filter-socket" value="Socket">
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="charging"
+                  id="filter-socket" value="Socket">
                 <label for="filter-socket">Сетевые</label>
               </li>
             </ul>
@@ -176,17 +178,17 @@
 
         <div class="filter-background product-sorting">
           <p>Сортировка:</p>
-            <ul class="sorting-type">
-              <li><a href="#nowhere">По цене</a></li>
-              <li><a href="#nowhere">По типу</a></li>
-              <li><a href="#nowhere">По функционалу</a></li>
-              <li class="sorting-arrow-up">
-                <a href="#nowhere"><span class="visually-hidden">По возрастанию</span></a>
-              </li>
-              <li class="sorting-arrow-down">
-                <a href="#nowhere"><span class="visually-hidden">По убыванию</span></a>
-              </li>
-            </ul>
+          <ul class="sorting-type">
+            <li><a href="#nowhere">По цене</a></li>
+            <li><a href="#nowhere">По типу</a></li>
+            <li><a href="#nowhere">По функционалу</a></li>
+            <li class="sorting-arrow-up">
+              <a href="#nowhere"><span class="visually-hidden">По возрастанию</span></a>
+            </li>
+            <li class="sorting-arrow-down">
+              <a href="#nowhere"><span class="visually-hidden">По убыванию</span></a>
+            </li>
+          </ul>
         </div>
 
         <table class="product-list">
