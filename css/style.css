@@ -1143,10 +1143,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-type {
-  min-width: 380px;
+  min-width: 350px;
   min-height: 20px;
   margin-left: 20px;
-  margin-right: 60px;
+  margin-right: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   display: flex;
@@ -1158,7 +1158,7 @@ input[type="radio"].visually-hidden {
 .sorting-type a {
   margin-bottom: 0px;
   margin-left: 0px;
-  margin-right: 20px;
+  margin-right: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -1170,6 +1170,7 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
   display: inline-block;
+  margin-left: 20px;
   margin-right: 0px;
   vertical-align: bottom;
   background-image: url("../img/icon-up-dir.svg");
