@@ -1434,9 +1434,9 @@ input[type="radio"].visually-hidden {
 
 .buy-link {
   padding-top: 0px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 23px;
+  padding-right: 17px;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1447,7 +1447,7 @@ input[type="radio"].visually-hidden {
 
 .availability-bookmarks {
   min-width: 70px;
-  height: 15px;
+  height: 12px;
   margin-bottom: 10px;
   position: relative;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
@@ -1471,11 +1471,11 @@ input[type="radio"].visually-hidden {
 .bookmarks-link {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 35px;
+  padding-right: 25px;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 12px;
   text-decoration: none;
   text-transform: uppercase;
   color: #32425c;
@@ -1553,6 +1553,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .turn-pages-link {
@@ -1584,11 +1585,20 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
+.turn-page-current {
+  background-color: #ee3643;
+}
+
+.turn-page-current .turn-pages-link {
+  color: #ffffff;
+}
+
 .turn-pages-pointer {
   width: 140px;
   height: 28px;
   padding-top: 10px;
   text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   border: 1px #e5e5e5 solid;
   border-radius: 5px;
@@ -2016,7 +2026,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-footer {
-  margin-right: 50px;
+  margin-right: auto;
   font-style: normal;
   text-decoration: none;
   color: #ffffff;
