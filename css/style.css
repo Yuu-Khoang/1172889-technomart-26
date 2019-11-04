@@ -1354,6 +1354,10 @@ input[type="radio"].visually-hidden {
   content: "";
 }
 
+.availability-buy:hover::before {
+  opacity: 1;
+}
+
 .buy-link {
   padding-top: 5px;
   padding-bottom: 5px;

@@ -330,9 +330,9 @@
       <section class="page-map">
         <h2 class="content-caption-h2">Контакты</h2>
         <p class="content-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img class="page-map-img" src="img/map.jpg"
+        <a class="contacts-button-map"><img class="page-map-img" src="img/map.jpg"
           alt="Компания Техномарт на карте по адресу Санкт-Петербург, ул. Б.Конюшенная, д.19/8" width="300"
-          height="158">
+          height="158"></a>
         <button class="button button-contacts-popup">Заблудились? Напишите Нам!</button>
       </section>
     </div>
@@ -483,6 +483,21 @@
         }
       }
     });
+
+    var mapLink = document.querySelector(".contacts-button-map");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".modal-close");
+
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-show");
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    });
+
   </script>
 
 </body>
