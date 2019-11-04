@@ -474,25 +474,33 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 20px;
   height: 45px;
-  margin: 0px 13px;
+  padding: 0px 11px;
   background: url(../img/icon-logout.svg) no-repeat;
-  background-position: 0px 12px;
+  background-position: 11px 12px;
   background-color: #ffffff;
 }
 
 .account-active {
-  width: 200px;
+  width: 210px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 5px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .account-active::before {
   content: "•";
   order: 2;
+}
+
+.account-active a:nth-child(1) {
+  order: 1;
+}
+
+.account-active a:nth-child(2) {
+  order: 3;
 }
 
 .account-active-link {
