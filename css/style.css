@@ -1371,8 +1371,12 @@ input[type="radio"].visually-hidden {
 }
 
 .availability-buy {
-  min-width: 135px;
-  height: 35px;
+  min-width: 95px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   position: relative;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   text-align: center;
@@ -1409,7 +1413,7 @@ input[type="radio"].visually-hidden {
 }
 
 .buy-link {
-  padding-top: 5px;
+  padding-top: 0px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 30px;
@@ -1422,9 +1426,9 @@ input[type="radio"].visually-hidden {
 }
 
 .availability-bookmarks {
-  min-width: 135px;
-  height: 35px;
-  margin-top: 0px;
+  min-width: 70px;
+  height: 15px;
+  margin-bottom: 10px;
   position: relative;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   text-align: center;
