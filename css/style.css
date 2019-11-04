@@ -1335,6 +1335,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
   background-image: url(../img/red-button.svg);
+  background-position: 4px 0px;
   background-repeat: no-repeat;
 }
 
@@ -1350,7 +1351,7 @@ input[type="radio"].visually-hidden {
 .product-availability {
   width: 217px;
   min-height: 100px;
-  padding-top: 40px;
+  padding-top: 36px;
   position: absolute;
   display: flex;
   flex-direction: column;
