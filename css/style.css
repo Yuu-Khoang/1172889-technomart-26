@@ -652,6 +652,11 @@ input[type="radio"].visually-hidden {
   list-style-type: none;
 }
 
+.features-block ul {
+  padding: 0;
+  display: flex;
+}
+
 .features-block-caption {
   width: 200px;
   margin-top: 10px;
