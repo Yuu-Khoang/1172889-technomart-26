@@ -281,13 +281,14 @@ input[type="radio"].visually-hidden {
 
 .cart {
   display: flex;
-  margin-right: 20px;
+  margin-right: 0px;
+  padding-right: 20px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.cart-catalog {
+.cart-filled {
   background-color: #ee3643;
 }
 
@@ -343,10 +344,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan {
-  width: 220px;
+  width: 200px;
   margin-top: 0px;
-  margin-right: 25px;
+  margin-right: 40px;
   padding-left: 52px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -400,7 +402,7 @@ input[type="radio"].visually-hidden {
 }
 
 .account {
-  min-width: 120px;
+  min-width: 100px;
   height: 45px;
   display: flex;
   flex-direction: row;
@@ -434,6 +436,8 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 20px;
   height: 18px;
+  margin-right: 25px;
+  padding-right: 10px;
   vertical-align: middle;
   background: url(../img/icon-user.svg) no-repeat;
   content: "";
@@ -441,28 +445,30 @@ input[type="radio"].visually-hidden {
 
 .account .icon-login::before {
   display: inline-block;
-  width: 30px;
+  width: 15px;
   height: 17px;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 0px;
   padding-left: 0px;
-  padding-right: 5px;
+  padding-right: 17px;
   background: url(../img/icon-login.svg) no-repeat;
   background-position: 0px 0px;
   content: "";
 }
 
-.icon-logout {
+.account .icon-logout {
   display: inline-block;
   width: 20px;
   height: 45px;
   vertical-align: middle;
   background: url(../img/icon-logout.svg) no-repeat;
+  background-position: 0px 12px;
   background-color: #ffffff;
   content: "";
 }
 
 .account-active {
+  width: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -839,6 +845,7 @@ input[type="radio"].visually-hidden {
   z-index: 5;
   vertical-align: middle;
   background: url(../img/icon-left.svg) no-repeat;
+  border: none;
 }
 
 .features-slider-next {
@@ -851,6 +858,7 @@ input[type="radio"].visually-hidden {
   z-index: 5;
   vertical-align: middle;
   background: url(../img/icon-right.svg) no-repeat;
+  border: none;
 }
 
 .features-slider-button {
