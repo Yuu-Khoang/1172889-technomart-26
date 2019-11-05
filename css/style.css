@@ -943,7 +943,7 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.catalog-filter button {
+.catalog-filter button[type="submit"] {
   width: 140px;
   height: 38px;
   margin-top: 50px;
@@ -997,15 +997,19 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-color: #ababab;
-  background-image: url("../img/filter-button.svg");
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border: 8px #ffffff solid;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: grab;
+}
+
+.toggle:active {
+  cursor: grabbing;
 }
 
 .range-controls .controls-min {
@@ -1035,6 +1039,16 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   background-color: #f7f3ec;
   border: 0px;
+}
+
+.price-controls input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.price-controls input[type="number"]::-webkit-outer-spin-button,
+.price-controls input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .price-controls span {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Техномарт - инструменты, техника, материалы</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link type="text/css" href="css/style-min.css" rel="stylesheet">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <form method="get" action="https://echo.htmlacademy.ru/" class="search">
 
           <label for="search" class="search-label">Поиск:</label>
-          <input type="text" name="search" id="search" class="search-input" required>
+          <input type="search" name="search" id="search" class="search-input" required>
 
           <button type="submit" class="search-button">
             <svg class="icon-search" width="17" height="17">
@@ -101,15 +101,15 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle controls-min"></div>
-                <div class="toggle controls-max"></div>
+                <button class="toggle controls-min" type="button" hidden aria-label="Минимальная цена"></button>
+                <button class="toggle controls-max" type="button" hidden aria-label="Максимальная цена"></button>
               </div>
               <div class="price-controls">
                 <label class="min-price visually-hidden" for="min-price"> от</label>
-                <input name="min-price" id="min-price" type="text" value="0">
+                <input name="min-price" id="min-price" type="number" value="0">
                 <span>&nbsp;</span>
                 <label class="max-price visually-hidden" for="max-price">до</label>
-                <input name="max-price" id="max-price" type="text" value="30000">
+                <input name="max-price" id="max-price" type="number" value="30000">
               </div>
             </div>
           </fieldset>
