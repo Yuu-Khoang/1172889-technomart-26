@@ -1645,10 +1645,15 @@ input[type="radio"].visually-hidden {
 
 .turn-page-current {
   background-color: #ee3643;
+  border: 1px #ee3643 solid;
 }
 
 .turn-page-current .turn-pages-link {
   color: #ffffff;
+}
+
+.turn-page-current:hover {
+  border: 1px #ee3643 solid;
 }
 
 .turn-pages-pointer {
