@@ -1251,7 +1251,7 @@ input[type="radio"].visually-hidden {
   min-width: 350px;
   min-height: 20px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   display: flex;
@@ -1268,7 +1268,13 @@ input[type="radio"].visually-hidden {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  color: #ee3643;
+}
+
+.sorting-type a:link,
+.sorting-type a:visited {
   color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #ee3643 1px;
 }
 
 .sorting-type li:nth-child(1) {
@@ -1284,28 +1290,20 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-arrow-up a {
+  display: block;
   width: 11px;
   height: 10px;
-  display: inline-block;
   margin-left: 20px;
   margin-right: 0px;
-  vertical-align: bottom;
-  background-image: url("../img/icon-up-dir.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 5px;
-  content: "";
+  padding-top: 0;
 }
 
 .sorting-arrow-down a {
+  display: block;
   width: 11px;
   height: 10px;
-  display: inline-block;
   margin-left: 0px;
-  vertical-align: bottom;
-  background-image: url("../img/icon-down-dir.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 5px;
-  content: "";
+  padding-top: 0;
 }
 
 /*  Каталог товаров  */
@@ -1620,6 +1618,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .turn-pages-number {
@@ -1848,7 +1848,7 @@ input[type="radio"].visually-hidden {
 
 .content-list {
   width: 100%;
-  margin-top: -10px;
+  margin-top: -14px;
   margin-bottom: 20px;
   padding: 0px;
   list-style-type: none;
@@ -1914,6 +1914,7 @@ input[type="radio"].visually-hidden {
 
 .button-contacts-popup {
   width: 300px;
+  font-size: 14px;
 }
 
 .contacts-popup {
