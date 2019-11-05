@@ -1407,11 +1407,12 @@ input[type="radio"].visually-hidden {
   width: 140px;
   min-height: 38px;
   margin-top: 7px;
+  margin-left: 8px;
   padding-top: 10px;
   line-height: 18px;
   color: #ffffff;
   background-image: url("../img/red-button.svg");
-  background-position: 4px 0px;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
 }
 
