@@ -570,6 +570,7 @@ input[type="radio"].visually-hidden {
   width: 14px;
   height: 12px;
   padding: 10px 2px;
+  vertical-align: middle;
 }
 
 .breadcrumbs .icon-home {
@@ -1166,6 +1167,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   position: relative;
   padding-left: 35px;
+  vertical-align: middle;
   cursor: pointer;
   user-select: none;
 }
@@ -1813,7 +1815,7 @@ input[type="radio"].visually-hidden {
   padding-left: 60px;
   margin-bottom: 40px;
   display: block;
-  position: absolute;
+  position: relative;
 }
 
 .service-delivery-img {
@@ -1856,6 +1858,7 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 700px;
   min-height: 280px;
+  vertical-align: middle;
   background: url("../img/service-credit.png") no-repeat;
   background-position-x: 220px;
   background-color: #f4f7f9;
