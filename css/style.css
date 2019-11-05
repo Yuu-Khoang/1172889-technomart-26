@@ -1990,7 +1990,8 @@ input[type="radio"].visually-hidden {
   min-height: 34px;
   font-size: 13px;
   line-height: 18px;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 2px;
   padding-left: 14px;
   border: 2px #dee3e4 solid;
   border-radius: 2px;
@@ -2000,8 +2001,8 @@ input[type="radio"].visually-hidden {
   width: 440px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 18px;
-  margin-top: 12px;
+  line-height: 17px;
+  margin-top: 8px;
   padding-left: 15px;
   padding-top: 12px;
   color: #a9a9a9;
@@ -2061,7 +2062,7 @@ input[type="radio"].visually-hidden {
 
 .buy-popup-button {
   width: 440px;
-  margin-top: -5px;
+  margin-top: 2px;
 }
 
 .button-skip {
@@ -2082,7 +2083,7 @@ input[type="radio"].visually-hidden {
   width: 460px;
   position: relative;
   left: 0px;
-  bottom: -80px;
+  bottom: -72px;
   text-align: center;
 }
 
