@@ -1602,6 +1602,11 @@ input[type="radio"].visually-hidden {
   border: 1px #eaeaea solid;
 }
 
+.brand-list-link {
+  width: auto;
+  height: auto;
+}
+
 .brands-list:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
   border: 1px #ffffff solid;
