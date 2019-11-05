@@ -1589,10 +1589,12 @@ input[type="radio"].visually-hidden {
 
 .brands-list:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  border: 1px #ffffff solid;
 }
 
 .brands-list:active {
   box-shadow: 2px 2px 10px rgba(41, 52, 73, 0.5);
+  border: 1px #ffffff solid;
 }
 
 .brands-list:active img {
