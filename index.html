@@ -294,7 +294,7 @@
             <img class="page-map-img" src="img/map.jpg" alt="Компания Техномарт на карте по адресу Санкт-Петербург, ул. Б.Конюшенная, д.19/8" width="300" height="158">
           </a>
         </div>
-        <button class="button button-contacts-popup" type="button">Заблудились? Напишите Нам!</button>
+        <button class="button button-contacts-popup open-popup" type="button">Заблудились? Напишите Нам!</button>
       </section>
     </div>
 
@@ -397,77 +397,7 @@
     </section>
   </footer>
 
-  <script>
-    var link = document.querySelector(".button-contacts-popup");
-    var popup = document.querySelector(".contacts-popup");
-    var close = popup.querySelector(".close-popup");
-    var form = popup.querySelector("form");
-    var name = popup.querySelector("[name=name]");
-    var email = popup.querySelector("[name=email]");
-
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("name");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("popup-show");
-      if (storage) {
-        name.value = storage;
-        email.focus();
-      } else {
-        name.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("popup-show");
-      popup.classList.remove("popup-error");
-    });
-
-    form.addEventListener("submit", function (evt) {
-      if (!name.value || !email.value) {
-        evt.preventDefault();
-        popup.classList.add("popup-error");
-        console.log("Нужно указать имя и e-mail");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("name", name.value);
-        }
-      }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("popup-show")) {
-          popup.classList.remove("popup-show");
-          popup.classList.remove("popup-error");
-        }
-      }
-    });
-
-    var mapLink = document.querySelector(".contacts-button-map");
-    var mapPopup = document.querySelector(".modal-map");
-    var mapClose = mapPopup.querySelector(".modal-close");
-
-    mapLink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.add("modal-show");
-    });
-
-    mapClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-show");
-    });
-
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 

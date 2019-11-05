@@ -91,7 +91,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   border: 0px;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #ffffff;
   background-color: #ee3643;
   cursor: pointer;
@@ -680,7 +680,7 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .features-block-button:hover {
@@ -951,7 +951,7 @@ input[type="radio"].visually-hidden {
 /*  Фильтры каталога товаров  */
 .filter-background {
   min-height: 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -991,7 +991,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px #e5e5e5 solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .filter-price {
@@ -1018,7 +1018,7 @@ input[type="radio"].visually-hidden {
   padding-top: 40px;
   padding-right: 25px;
   padding-left: 30px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .range-controls .scale {
@@ -1323,13 +1323,14 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-flex {
+  width: 940px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  width: 940px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0px;
 }
 
 .product-list tbody {
@@ -1457,7 +1458,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   border: 0px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #63a63e;
   border-bottom: 3px #367315 solid;
   cursor: pointer;
@@ -1510,18 +1511,18 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   border: 3px #63a63e solid;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 .availability-bookmarks:hover {
   border: 3px #32425c solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .availability-bookmarks:active {
   border: 3px #c1c6ce solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .bookmarks-link {
@@ -1543,9 +1544,8 @@ input[type="radio"].visually-hidden {
 
 .description-perforator {
   min-height: 260px;
-  margin-top: 20px;
-  padding-top: 35px;
-  margin-bottom: -35px;
+  padding-top: 39px;
+  margin-bottom: -36px;
 }
 
 /* Популярные товары и популярные производители */
@@ -1602,7 +1602,7 @@ input[type="radio"].visually-hidden {
   width: 284px;
   max-width: 700px;
   min-height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-left: 0px;
   padding-left: 0px;
   display: flex;
@@ -1625,10 +1625,10 @@ input[type="radio"].visually-hidden {
 .turn-pages-number {
   width: 38px;
   height: 28px;
-  padding-top: 10px;
+  padding-top: 7px;
   text-align: center;
   border: 1px #e5e5e5 solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .turn-pages-number:hover {
@@ -1654,12 +1654,12 @@ input[type="radio"].visually-hidden {
 .turn-pages-pointer {
   width: 140px;
   height: 28px;
-  padding-top: 10px;
+  padding-top: 7px;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   border: 1px #e5e5e5 solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .turn-pages-pointer a {
@@ -1978,6 +1978,75 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
+.buy-popup {
+  width: 540px;
+  min-height: 165px;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  padding-left: 80px;
+  border-top: 7px #ff5257 solid;
+  border-bottom: 112px #f4f4f4 solid;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.buy-popup-message {
+  margin-top: -10px;
+  padding-top: 0px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.buy-popup-message::before {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  position: relative;
+  margin-right: 35px;
+  top: 25px;
+  left: 0px;
+  background: url("../img/checked-popup.svg") no-repeat;
+  background-color: #ffffff;
+  border: 0px;
+  content: "";
+}
+
+.button-order {
+  min-height: 38px;
+  margin-right: 20px;
+  padding-left: 57px;
+  padding-right: 60px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.buy-popup-button {
+  width: 440px;
+  margin-top: -5px;
+}
+
+.button-skip {
+  width: 220px;
+  min-height: 38px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+}
+
 .submit-popup {
   width: 460px;
   position: relative;
@@ -1991,8 +2060,8 @@ input[type="radio"].visually-hidden {
   height: 21px;
   display: block;
   position: relative;
-  top: 0px;
-  left: 500px;
+  top: 2px;
+  left: 505px;
   margin: 5px;
   padding: 10px;
   background: url("../img/icon-close.svg") no-repeat;
