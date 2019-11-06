@@ -1370,7 +1370,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .product-item {
@@ -1391,6 +1391,20 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   overflow: hidden;
   border: 1px #eaeaea solid;
+}
+
+.product-item:nth-child(1n) {
+  margin-left: 0px;
+  margin-right: 17px;
+}
+
+.product-item:nth-child(2n) {
+  margin-right: 17px;
+}
+
+.product-item:nth-child(3n) {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .product-photo {
