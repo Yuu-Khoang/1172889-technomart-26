@@ -61,6 +61,17 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
+.content-text-inner {
+  width: 960px;
+  margin-top: 3px;
+  margin-bottom: 25px;
+  padding: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .caption-button {
   width: 886px;
   height: 89px;
@@ -1117,6 +1128,7 @@ input[type="radio"].visually-hidden {
 
 .filter-brand {
   margin-left: 0px;
+  padding-top: 0px;
   padding-left: 0px;
 }
 
@@ -1133,20 +1145,21 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-brand ul {
-  margin-bottom: -10px;
+  margin-bottom: 10px;
   padding: 0px;
   list-style-type: none;
 }
 
 .filter-charging {
   margin-left: 0px;
+  padding-top: 0px;
   padding-left: 0px;
 }
 
 .filter-charging legend {
   width: 220px;
   margin-left: auto;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-left: 0px;
   text-transform: uppercase;
   font-size: 17px;
@@ -1160,7 +1173,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .filter-option label {
@@ -1341,6 +1354,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-flex {
   width: 940px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1356,7 +1370,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .product-item {
@@ -1377,6 +1391,20 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   overflow: hidden;
   border: 1px #eaeaea solid;
+}
+
+.product-item:nth-child(1n) {
+  margin-left: 0px;
+  margin-right: 17px;
+}
+
+.product-item:nth-child(2n) {
+  margin-right: 17px;
+}
+
+.product-item:nth-child(3n) {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .product-photo {
@@ -1604,9 +1632,12 @@ input[type="radio"].visually-hidden {
   border: 1px #eaeaea solid;
 }
 
-.brand-list-link {
-  width: auto;
-  height: auto;
+.brands-list a {
+  width: 220px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brands-list:hover {
@@ -1716,6 +1747,11 @@ input[type="radio"].visually-hidden {
   width: 400px;
 }
 
+.service-info .content-text {
+  margin-top: 27px;
+  margin-bottom: 14px;
+}
+
 .service-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -1763,8 +1799,8 @@ input[type="radio"].visually-hidden {
 .service-tabs-list {
   width: 240px;
   height: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 18px;
   padding-left: 0px;
   font-size: 21px;
   line-height: 30px;
@@ -1783,14 +1819,19 @@ input[type="radio"].visually-hidden {
   color: #32425c;
 }
 
+.active a {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
 .service-tabs-link {
   width: 220px;
   height: auto;
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 10%;
-  padding-right: 50%;
+  padding-left: 20px;
+  padding-right: 142px;
   color: #ffffff;
 }
 
@@ -2232,6 +2273,9 @@ input[type="radio"].visually-hidden {
 
 .contacts-footer address {
   margin-top: 0px;
+  margin-left: 2px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
@@ -2240,6 +2284,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-footer a {
+  margin-left: 3px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -2277,6 +2322,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: flex-start;
   justify-items: right;
+  margin-left: 2px;
+  margin-right: 0px;
 }
 
 .nav-site-link {
@@ -2322,7 +2369,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-category li {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   align-items: flex-start;
   justify-items: right;
@@ -2385,7 +2432,8 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright-developer p {
-  margin-left: 40px;
+  margin-left: 35px;
+  margin-right: 18px;
 }
 
 .socials {
@@ -2393,7 +2441,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 3;
   text-align: center;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 28px;
   margin-right: 0px;
 }
 
@@ -2405,7 +2453,7 @@ input[type="radio"].visually-hidden {
 }
 
 .socials li {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .socials li:nth-child(3n) {
