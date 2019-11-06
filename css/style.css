@@ -1632,9 +1632,12 @@ input[type="radio"].visually-hidden {
   border: 1px #eaeaea solid;
 }
 
-.brand-list-link {
-  width: auto;
-  height: auto;
+.brands-list a {
+  width: 220px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brands-list:hover {
