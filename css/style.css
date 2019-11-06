@@ -61,6 +61,17 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
+.content-text-inner {
+  width: 960px;
+  margin-top: 3px;
+  margin-bottom: 25px;
+  padding: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .caption-button {
   width: 886px;
   height: 89px;
@@ -2216,6 +2227,9 @@ input[type="radio"].visually-hidden {
 
 .contacts-footer address {
   margin-top: 0px;
+  margin-left: 2px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
@@ -2224,6 +2238,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-footer a {
+  margin-left: 3px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -2261,6 +2276,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: flex-start;
   justify-items: right;
+  margin-left: 2px;
+  margin-right: 0px;
 }
 
 .nav-site-link {
@@ -2306,7 +2323,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-category li {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   align-items: flex-start;
   justify-items: right;
@@ -2369,7 +2386,8 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright-developer p {
-  margin-left: 40px;
+  margin-left: 35px;
+  margin-right: 18px;
 }
 
 .socials {
@@ -2377,7 +2395,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 3;
   text-align: center;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 28px;
   margin-right: 0px;
 }
 
@@ -2389,7 +2407,7 @@ input[type="radio"].visually-hidden {
 }
 
 .socials li {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .socials li:nth-child(3n) {
