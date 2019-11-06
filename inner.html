@@ -7,7 +7,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext"
     rel="stylesheet">
-  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <link type="text/css" href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +48,6 @@
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
 
-
       <div>
         <div class="account">
           <a href="#nowhere" class="icon-user account-user">Равшан Джамшутович</a>
@@ -74,8 +73,6 @@
     </nav>
   </header>
 
-
-
   <main class="aligning-viewport content">
 
     <div class="aligning">
@@ -90,9 +87,7 @@
       </nav>
     </div>
 
-
     <h1 class="content-caption-product aligning">Перфораторы</h1>
-
 
     <div class="catalog-flex">
       <section class="catalog-filter">
@@ -166,8 +161,6 @@
         </form>
       </section>
 
-
-
       <section class="catalog-page">
 
         <div class="filter-background product-sorting">
@@ -239,7 +232,7 @@
               <td class="product-price-special"></td>
               <td class="product-price">12500 Р.</td>
               <td class="product-availability">
-                <a class="buy-link availability-buy" href="#buy-popup"> Купить </a>
+                <a class="buy-link availability-buy open-buy-alert" href="#buy-popup"> Купить </a>
                 <a class="bookmarks-link availability-bookmarks" href="#nowhere"> В закладки </a>
               </td>
             </tr>
@@ -311,7 +304,7 @@
               <td class="product-price-special"></td>
               <td class="product-price">12500 Р.</td>
               <td class="product-availability">
-                <a class="buy-link availability-buy open-popup" href="#buy-popup"> Купить </a>
+                <a class="buy-link availability-buy" href="#buy-popup"> Купить </a>
                 <a class="bookmarks-link availability-bookmarks" href="#nowhere"> В закладки </a>
               </td>
             </tr>
@@ -328,20 +321,20 @@
       </section>
     </div>
 
-
-    <div class="overlay">
-      <div class="buy-popup" id="buy-popup">
-        <button class="close-popup" type="button">
+    <div class="popup popup-buy-alert" hidden>
+      <div class="popup-content">
+        <button class="popup-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-          <p class="buy-popup-message">Товар добавлен в корзину!</p>
-          <div class="buy-popup-button submit-popup">
+        <div class="buy-alert" id="buy-alert">
+          <p class="buy-alert-message">Товар добавлен в корзину!</p>
+          <div class="buy-alert-button submit-popup">
             <a class="button button-order" href="#nowhere">Оформить заказ</a>
             <button class="button-skip" type="button">Продолжить покупки</button>
           </div>
+        </div>
       </div>
     </div>
-
 
   </main>
 
@@ -349,11 +342,8 @@
     <section class="description-perforator">
       <div class="aligning">
         <h2 class="content-caption-h2">Пара слов о перфораторах</h2>
-        <p class="content-text-inner">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
-          долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические
-          перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
-          ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-          дрель.</p>
+
+        <p class="content-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </section>
   </div>
@@ -431,7 +421,7 @@
     </section>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 
 </body>
 
