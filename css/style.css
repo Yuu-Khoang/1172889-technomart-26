@@ -1936,36 +1936,32 @@ input[type="radio"].visually-hidden {
 }
 
 .button-contacts-popup {
+  box-sizing: border-box;
   width: 300px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 14px;
 }
 
 /* Pop-up, всплывающие окна */
-.contacts-popup {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
   width: 100%;
   height: 100vh;
 }
 
-.contacts-content {
+.popup-content {
   box-sizing: border-box;
   position: relative;
   z-index: -1;
   width: 620px;
   min-height: 423px;
   margin: auto;
-}
-
-.contacts-popup form {
-  display: flex;
-  flex-direction: column;
-  min-height: 423px;
-  padding: 0 80px;
   background-color: #ffffff;
   box-shadow:
     inset 0 -112px 0 #f4f4f4,
@@ -1973,130 +1969,7 @@ input[type="radio"].visually-hidden {
     0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-.contacts-popup label {
-  width: 220px;
-  display: block;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.contacts-popup-required {
-  width: 460px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contacts-popup-required p {
-  margin: 48px 0 22px;
-}
-.contacts-popup-required p:first-child {
-  margin-right: 20px;
-}
-.contacts-popup input {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 34px;
-  font-size: 13px;
-  line-height: 18px;
-  margin-top: 8px;
-  padding: 0 13px;
-  border: 2px #dee3e4 solid;
-  border-radius: 2px;
-}
-
-.contacts-popup textarea {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 114px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 17px;
-  margin-top: 8px;
-  padding: 12px 15px;
-  color: #a9a9a9;
-  border: 2px #dee3e4 solid;
-  border-radius: 2px;
-  resize: none;
-}
-
-.buy-popup {
-  width: 540px;
-  min-height: 165px;
-  display: block;
-  position: fixed;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  padding-left: 80px;
-  border-top: 7px #ff5257 solid;
-  border-bottom: 112px #f4f4f4 solid;
-  background-color: #ffffff;
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-}
-
-.buy-popup-message {
-  margin-top: -10px;
-  padding-top: 0px;
-  font-family: "Cuprum", "Arial Narrow", sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-}
-
-.buy-popup-message::before {
-  width: 66px;
-  height: 66px;
-  display: inline-block;
-  position: relative;
-  margin-right: 35px;
-  top: 25px;
-  left: 0px;
-  background: url("../img/checked-popup.svg") no-repeat;
-  background-color: #ffffff;
-  border: 0px;
-  content: "";
-}
-
-.button-order {
-  min-height: 38px;
-  margin-right: 20px;
-  padding-left: 57px;
-  padding-right: 60px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  font-family: "Cuprum", "Arial Narrow", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  text-decoration: none;
-}
-
-.buy-popup-button {
-  width: 440px;
-  margin-top: 2px;
-}
-
-.button-skip {
-  width: 220px;
-  min-height: 38px;
-  font-family: "Cuprum", "Arial Narrow", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  border-radius: 3px;
-  border: none;
-  color: #000000;
-}
-
-.submit-popup {
-  margin-top: auto;
-  margin-bottom: 37px;
-  text-align: center;
-}
-
-.close-popup {
+.popup-close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -2105,10 +1978,9 @@ input[type="radio"].visually-hidden {
   height: 21px;
   border: 0px;
   background: url("../img/icon-close.svg") no-repeat;
-  background-color: #ffffff;
 }
 
-.close-popup::before {
+.popup-close::before {
   content: "";
   position: fixed;
   top: 0;
@@ -2126,6 +1998,155 @@ input[type="radio"].visually-hidden {
 
 .popup-error {
   animation: shake 0.6s;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  min-height: 423px;
+  padding: 0 80px;
+  background-color: #ffffff;
+}
+
+.feedback-required {
+  width: 460px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-required p {
+  margin: 48px 0 22px;
+}
+
+.feedback-required p:first-child {
+  margin-right: 20px;
+}
+
+.feedback label {
+  width: 220px;
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.feedback input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 34px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 8px;
+  padding: 0 13px;
+  border: 2px #dee3e4 solid;
+  border-radius: 2px;
+}
+
+.feedback textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 114px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 8px;
+  padding: 12px 15px;
+  color: #a9a9a9;
+  border: 2px #dee3e4 solid;
+  border-radius: 2px;
+  resize: none;
+}
+
+.feedback-submit {
+  margin-top: auto;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.popup-bigmap .popup-content {
+  width: 940px;
+  height: 446px;
+}
+
+.popup-bigmap .popup-content {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.popup-bigmap iframe {
+  border: none;
+}
+
+.buy-alert {
+  display: flex;
+  flex-direction: column;
+  min-height: 275px;
+  padding-left: 80px;
+  padding-right;: 80px;
+}
+
+.popup-buy-alert .popup-content {
+  min-height: 165px;
+}
+
+.buy-alert-message {
+  margin-top: 23px;
+  padding-top: 0px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.buy-alert-message::before {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  position: relative;
+  margin-right: 35px;
+  top: 25px;
+  left: 0px;
+  background: url("../img/checked-popup.svg") no-repeat;
+  /* background-color: #ffffff; */
+  border: 0px;
+  content: "";
+}
+
+.submit-popup {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.buy-alert-button {
+  width: 440px;
+}
+
+.button-order {
+  box-sizing: border-box;
+  min-height: 38px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.button-skip {
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 38px;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
 }
 
 @keyframes bounce {
