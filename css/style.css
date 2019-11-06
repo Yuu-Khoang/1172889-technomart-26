@@ -1935,40 +1935,47 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
 }
 
-/* Pop-up, всплывающие окна */
-.overlay {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
 .button-contacts-popup {
   width: 300px;
   font-size: 14px;
 }
 
+/* Pop-up, всплывающие окна */
 .contacts-popup {
-  width: 540px;
-  min-height: 313px;
-  display: block;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacts-content {
+  box-sizing: border-box;
+  position: relative;
   z-index: -1;
-  top: 50%;
-  left: 50%;
-  padding-left: 80px;
-  border-top: 7px #ff5257 solid;
-  border-bottom: 112px #f4f4f4 solid;
+  width: 620px;
+  min-height: 423px;
+  margin: auto;
+}
+
+.contacts-popup form {
+  display: flex;
+  flex-direction: column;
+  min-height: 423px;
+  padding: 0 80px;
   background-color: #ffffff;
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  box-shadow:
+    inset 0 -112px 0 #f4f4f4,
+    0 -7px 0 #ee3643,
+    0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .contacts-popup label {
   width: 220px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   font-size: 18px;
   line-height: 18px;
 }
@@ -1981,33 +1988,37 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.contacts-popup-required label {
-  height: 18px;
+.contacts-popup-required p {
+  margin: 48px 0 22px;
 }
-
+.contacts-popup-required p:first-child {
+  margin-right: 20px;
+}
 .contacts-popup input {
-  width: 200px;
+  box-sizing: border-box;
+  width: 100%;
   min-height: 34px;
   font-size: 13px;
   line-height: 18px;
   margin-top: 8px;
-  margin-bottom: 2px;
-  padding-left: 14px;
+  padding: 0 13px;
   border: 2px #dee3e4 solid;
   border-radius: 2px;
 }
 
 .contacts-popup textarea {
-  width: 440px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 114px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 17px;
   margin-top: 8px;
-  padding-left: 15px;
-  padding-top: 12px;
+  padding: 12px 15px;
   color: #a9a9a9;
   border: 2px #dee3e4 solid;
   border-radius: 2px;
+  resize: none;
 }
 
 .buy-popup {
@@ -2080,30 +2091,35 @@ input[type="radio"].visually-hidden {
 }
 
 .submit-popup {
-  width: 460px;
-  position: relative;
-  left: 0px;
-  bottom: -72px;
+  margin-top: auto;
+  margin-bottom: 37px;
   text-align: center;
 }
 
 .close-popup {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  display: block;
   width: 21px;
   height: 21px;
-  display: block;
-  position: relative;
-  top: 2px;
-  left: 505px;
-  margin: 5px;
-  padding: 10px;
+  border: 0px;
   background: url("../img/icon-close.svg") no-repeat;
   background-color: #ffffff;
-  border: 0px;
-  cursor: pointer;
+}
+
+.close-popup::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .popup-show {
-  display: block;
+  display: flex;
   z-index: 100;
   animation: bounce 0.6s;
 }
